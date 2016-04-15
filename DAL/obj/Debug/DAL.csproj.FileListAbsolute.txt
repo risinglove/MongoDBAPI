@@ -1,0 +1,14 @@
+G:\01-项目文件-学习\MongoDB\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\DAL.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\DAL.pdb
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\Model.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Bson.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Driver.Core.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Driver.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Driver.Legacy.dll
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\Model.pdb
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Bson.xml
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Driver.xml
+G:\01-项目文件-学习\MongoDB\DAL\bin\Debug\MongoDB.Driver.Legacy.xml
+G:\01-项目文件-学习\MongoDB\DAL\obj\Debug\DAL.dll
+G:\01-项目文件-学习\MongoDB\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,6 @@
+G:\01-项目文件-学习\MongoDB\Model\bin\Debug\Model.dll
+G:\01-项目文件-学习\MongoDB\Model\bin\Debug\Model.pdb
+G:\01-项目文件-学习\MongoDB\Model\bin\Debug\MongoDB.Bson.dll
+G:\01-项目文件-学习\MongoDB\Model\bin\Debug\MongoDB.Bson.xml
+G:\01-项目文件-学习\MongoDB\Model\obj\Debug\Model.dll
+G:\01-项目文件-学习\MongoDB\Model\obj\Debug\Model.pdb
