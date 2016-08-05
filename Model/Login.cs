@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Model
 {
@@ -13,7 +14,9 @@ namespace Model
         /// <summary>
         /// ID
         /// </summary>
-        public ObjectId Id { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
 
         /// <summary>
         /// 用户名
@@ -27,7 +30,7 @@ namespace Model
         public string Password { get; set; }
 
         /// <summary>
-        /// 状态
+        /// 状态 1：有效   0：禁用
         /// </summary>
         public int Status { get; set; }
 
