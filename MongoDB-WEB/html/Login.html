@@ -27,18 +27,47 @@
     </style>
 </head>
 <body>
-    <div class="container" ng-app="LoginApp" ng-controller="LoginController">
+    <div class="container">
 
     </div>
 </body>
 </html>
-<script src="../Scripts/angular.js"></script>
+<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<!--<script src="../Scripts/angular.js"></script>-->
 <script type="text/javascript">
-    var app = angular.module("LoginApp", []);
-    
-    app.controller("LoginController", function ($scope, $http) {
-        $http.post("http://192.168.31.229:88/API/login/GetAllLoginList", {}).success(function (dt) {
-            console.log(dt);
+    //var app = angular.module("LoginApp", []);
+
+    //app.controller("LoginController", function ($scope, $http) {
+        //$http.post("http://192.168.0.105:85/API/login/GetAllLoginList", {}).success(function (dt) {
+        //    console.log(dt);
+    //});
+    $(function () {
+        //$.get("http://192.168.0.105:85/API/login/Register?LoginName=JK&Password=123456", function (dt) {
+        //    console.log(dt);
+        //});
+
+        $.ajax({
+            Type: "GET",
+            url: "http://localhost:85/API/login/Register?LoginName=JK&Password=123456",
+            dataType: "jsonp",
+            success: listContacts
         });
+
+
+        //$.ajax({
+        //    Type: "GET",
+        //    url: "http://192.168.0.105:85/API/login/GetAllLoginList",
+        //    dataType: "jsonp",
+        //    success: listContacts
+        //});
+
+
+
+        function listContacts(contacts) {
+            console.log(contacts);
+        }
     });
+       
+
+    //});
 </script>

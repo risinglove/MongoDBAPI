@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
-using System.ComponentModel;
 using Model;
 using MongoDB.Bson;
-using Utility;
-using System.Web.Providers.Entities;
-using System.IO;
-using System.Net;
-using System.Net.Http.Headers;
 
 namespace API.Controllers
 {
@@ -62,35 +55,36 @@ namespace API.Controllers
         /// <param name="model">模型</param>
         /// <param name="returnUrl">跳转地址</param>
         /// <returns>结果</returns>
-        public JsonData Register(ViewModel.Register model, string returnUrl)
+        [System.Web.Mvc.HttpPost]
+        public JsonData Register(string LoginName,string Password)//ViewModel.Register model, string returnUrl)
         {
-            if (string.IsNullOrEmpty(returnUrl))
+            //if (string.IsNullOrEmpty(returnUrl))
+            //{
+            //    returnUrl = "";
+            //}
+            //string code = HttpContext.Current.Session["VerifyCode"].ToString();
+            //if (string.IsNullOrEmpty(code))
+            //{
+            //    return new JsonData() { status = "no", msg = "验证码错误" };
+            //}
+            //if (model.VerifyCode != null && code == model.VerifyCode)
+            //{
+            Model.Login login = new Login()
             {
-                returnUrl = "";
-            }
-            string code = HttpContext.Current.Session["VerifyCode"].ToString();
-            if (string.IsNullOrEmpty(code))
+                LoginName = LoginName,
+                Password = Password,
+                RegTime = DateTime.Now.ToString(),
+                Status = 1
+            };
+            if (bll.Add(login))
             {
-                return new JsonData() { status = "no", msg = "验证码错误" };
+                return new JsonData() { status = "ok", msg = "注册成功", url = "" };
             }
-            if (model.VerifyCode != null && code == model.VerifyCode)
-            {
-                Model.Login login = new Login()
-                {
-                    LoginName = model.LoginName,
-                    Password = model.Password,
-                    RegTime = DateTime.Now.ToString(),
-                    Status = 1
-                };
-                if (bll.Add(login))
-                {
-                    return new JsonData() { status = "ok", msg = "注册成功", url = "" };
-                }
-            }
-            else
-            {
-                return new JsonData() { status = "no", msg = "验证码错误" };
-            }
+            //}
+            //else
+            //{
+            //    return new JsonData() { status = "no", msg = "验证码错误" };
+            //}
             return new JsonData() { status = "no", msg = "注册失败" };
         }
         #endregion
@@ -162,25 +156,6 @@ namespace API.Controllers
             return new JsonData() { status = "no", msg = "修改失败" };
         }
         #endregion
-
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <returns></returns>
-        //public void GetVerfyPic()
-        //{
-        //    HttpContext.Current.Response.Buffer = true;
-        //    HttpContext.Current.Response.ExpiresAbsolute = System.DateTime.Now.AddSeconds(-1);
-        //    HttpContext.Current.Response.Expires = 0;
-        //    HttpContext.Current.Response.CacheControl = "no-cache";
-        //    HttpContext.Current.Response.AppendHeader("Pragma", "No-Cache");
-        //    string code = string.Empty;
-        //    byte[] bytes = Helper.CreateValidateGraphic(out code, 4, 100, 34, 20);
-        //    HttpContext.Current.Response.Cache.SetNoStore();//这一句 		
-        //    HttpContext.Current.Response.ClearContent();
-        //    HttpContext.Current.Response.ContentType = "image/Jpeg";
-        //    HttpContext.Current.Response.BinaryWrite(bytes);
-        //}
 
     }
 }
