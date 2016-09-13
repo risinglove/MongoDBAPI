@@ -1,0 +1,14 @@
+E:\JK\MongoDBAPI\DAL\bin\Release\DAL.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\DAL.pdb
+E:\JK\MongoDBAPI\DAL\bin\Release\Model.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Bson.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Driver.Core.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Driver.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Driver.Legacy.dll
+E:\JK\MongoDBAPI\DAL\bin\Release\Model.pdb
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Bson.xml
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Driver.xml
+E:\JK\MongoDBAPI\DAL\bin\Release\MongoDB.Driver.Legacy.xml
+E:\JK\MongoDBAPI\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+E:\JK\MongoDBAPI\DAL\obj\Release\DAL.dll
+E:\JK\MongoDBAPI\DAL\obj\Release\DAL.pdb

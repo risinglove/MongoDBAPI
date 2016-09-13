@@ -17,11 +17,9 @@ namespace API
     {
         protected void Application_Start()
         {
-            GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter());  //自定义支持JSONP的方法
-
-
+          GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter());  //自定义支持JSONP的方法
+            
             AreaRegistration.RegisterAllAreas();
-
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

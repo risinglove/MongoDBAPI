@@ -23,7 +23,7 @@ namespace API
             config.Formatters.Remove(config.Formatters.XmlFormatter);
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            
+
             #endregion
 
             // Web API routes
@@ -31,7 +31,7 @@ namespace API
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
 
@@ -42,7 +42,7 @@ namespace API
 
             // 若要在应用程序中禁用跟踪，请注释掉或删除以下代码行
             // 有关详细信息，请参阅: http://www.asp.net/web-api
-            config.EnableSystemDiagnosticsTracing();
+            //config.EnableSystemDiagnosticsTracing();
 
         }
     }

@@ -97,9 +97,6 @@ G:\01-项目文件-学习\MongoDB\API\bin\MongoDB.Bson.xml
 G:\01-项目文件-学习\MongoDB\API\bin\MongoDB.Driver.Legacy.xml
 G:\01-项目文件-学习\MongoDB\API\bin\MongoDB.Driver.xml
 G:\01-项目文件-学习\MongoDB\API\obj\Debug\API.csprojResolveAssemblyReference.cache
-E:\JK\MongoDBAPI\API\obj\Debug\API.csprojResolveAssemblyReference.cache
-E:\JK\MongoDBAPI\API\obj\Debug\API.dll
-E:\JK\MongoDBAPI\API\obj\Debug\API.pdb
 E:\JK\MongoDBAPI\API\bin\API.dll.config
 E:\JK\MongoDBAPI\API\bin\API.dll
 E:\JK\MongoDBAPI\API\bin\API.pdb
@@ -200,3 +197,6 @@ E:\JK\MongoDBAPI\API\bin\ko\System.Spatial.resources.dll
 E:\JK\MongoDBAPI\API\bin\ru\System.Spatial.resources.dll
 E:\JK\MongoDBAPI\API\bin\zh-Hans\System.Spatial.resources.dll
 E:\JK\MongoDBAPI\API\bin\zh-Hant\System.Spatial.resources.dll
+E:\JK\MongoDBAPI\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+E:\JK\MongoDBAPI\API\obj\Debug\API.dll
+E:\JK\MongoDBAPI\API\obj\Debug\API.pdb

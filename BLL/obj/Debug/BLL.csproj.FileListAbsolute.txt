@@ -14,7 +14,6 @@ G:\01-项目文件-学习\MongoDB\BLL\bin\Debug\MongoDB.Driver.xml
 G:\01-项目文件-学习\MongoDB\BLL\bin\Debug\MongoDB.Bson.xml
 G:\01-项目文件-学习\MongoDB\BLL\obj\Debug\BLL.dll
 G:\01-项目文件-学习\MongoDB\BLL\obj\Debug\BLL.pdb
-E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\JK\MongoDBAPI\BLL\bin\Debug\BLL.dll
 E:\JK\MongoDBAPI\BLL\bin\Debug\BLL.pdb
 E:\JK\MongoDBAPI\BLL\bin\Debug\DAL.dll
@@ -33,5 +32,6 @@ E:\JK\MongoDBAPI\BLL\bin\Debug\MongoDB.Driver.xml
 E:\JK\MongoDBAPI\BLL\bin\Debug\MongoDB.Driver.Legacy.xml
 E:\JK\MongoDBAPI\BLL\bin\Debug\zxing.pdb
 E:\JK\MongoDBAPI\BLL\bin\Debug\zxing.xml
+E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.dll
 E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.pdb

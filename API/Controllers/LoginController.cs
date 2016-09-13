@@ -55,9 +55,10 @@ namespace API.Controllers
         /// <param name="model">模型</param>
         /// <param name="returnUrl">跳转地址</param>
         /// <returns>结果</returns>
-        [System.Web.Mvc.HttpPost]
-        public JsonData Register(string LoginName,string Password)//ViewModel.Register model, string returnUrl)
+        public JsonData Register(ViewModel.Register model, string returnUrl)
         {
+            
+
             //if (string.IsNullOrEmpty(returnUrl))
             //{
             //    returnUrl = "";
@@ -71,8 +72,8 @@ namespace API.Controllers
             //{
             Model.Login login = new Login()
             {
-                LoginName = LoginName,
-                Password = Password,
+                LoginName = model.LoginName,
+                Password = model.Password,
                 RegTime = DateTime.Now.ToString(),
                 Status = 1
             };

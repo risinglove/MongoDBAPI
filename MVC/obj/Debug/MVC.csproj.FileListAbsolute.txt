@@ -102,3 +102,4 @@ E:\JK\MongoDBAPI\MVC\bin\zh-Hans\System.Spatial.resources.dll
 E:\JK\MongoDBAPI\MVC\bin\zh-Hant\System.Spatial.resources.dll
 E:\JK\MongoDBAPI\MVC\obj\Debug\MVC.dll
 E:\JK\MongoDBAPI\MVC\obj\Debug\MVC.pdb
+E:\JK\MongoDBAPI\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache

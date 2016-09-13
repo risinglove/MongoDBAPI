@@ -28,46 +28,41 @@
 </head>
 <body>
     <div class="container">
-
+        <form action="http://192.168.0.105:85/API/login/Register" method="post">
+            <p><input type="text" name="LoginName" value="jj" /></p>
+            <p><input type="text" name="Password" value="123456" /></p>
+            <p><input type="text" name="ConfirmPassword" value="123456" /></p>
+            <p><input type="text" name="VerifyCode" value="1234" /></p>
+            <p><input type="text" name="returnUrl" value="" /></p>
+            <button type="submit">提交</button>
+        </form>
     </div>
 </body>
 </html>
 <script src="../Scripts/jquery-1.9.1.min.js"></script>
-<!--<script src="../Scripts/angular.js"></script>-->
 <script type="text/javascript">
-    //var app = angular.module("LoginApp", []);
-
-    //app.controller("LoginController", function ($scope, $http) {
-        //$http.post("http://192.168.0.105:85/API/login/GetAllLoginList", {}).success(function (dt) {
-        //    console.log(dt);
-    //});
     $(function () {
-        //$.get("http://192.168.0.105:85/API/login/Register?LoginName=JK&Password=123456", function (dt) {
-        //    console.log(dt);
+
+        //$.ajax({
+        //    Type: "POST",
+        //    url: "http://192.168.0.105:85/API/login/Register?LoginName=JJ&Password=123456&ConfirmPassword=123456&VerifyCode=1234",
+        //    data: { "LoginName": "JK", "Password": "123456" },
+        //    dataType: "json",
+        //    success: function (dt) { console.log(dt);}
         //});
+
+       // $.post("http://192.168.0.105:85/API/login/Register", { model: { "LoginName": "JK", "Password": "123456", "ConfirmPassword": "123456", "VerifyCode": "1234" }, returnUrl: "" }, function (data) { console.log(data); });
+
 
         $.ajax({
             Type: "GET",
-            url: "http://localhost:85/API/login/Register?LoginName=JK&Password=123456",
-            dataType: "jsonp",
-            success: listContacts
+            url: "http://192.168.0.105:85/API/login/GetAllLoginList",
+            dataType: "json",
+            success: function (data) { console.log(data); }
         });
-
-
-        //$.ajax({
-        //    Type: "GET",
-        //    url: "http://192.168.0.105:85/API/login/GetAllLoginList",
-        //    dataType: "jsonp",
-        //    success: listContacts
-        //});
-
-
 
         function listContacts(contacts) {
             console.log(contacts);
         }
     });
-       
-
-    //});
 </script>

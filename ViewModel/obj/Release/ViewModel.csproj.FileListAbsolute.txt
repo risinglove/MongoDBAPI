@@ -1,0 +1,4 @@
+E:\JK\MongoDBAPI\ViewModel\bin\Release\ViewModel.dll
+E:\JK\MongoDBAPI\ViewModel\bin\Release\ViewModel.pdb
+E:\JK\MongoDBAPI\ViewModel\obj\Release\ViewModel.dll
+E:\JK\MongoDBAPI\ViewModel\obj\Release\ViewModel.pdb
