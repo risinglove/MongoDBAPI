@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            min-height: 400px;
+        }
+
+        .container {
+            height: 400px;
+            min-width: 300px;
+            max-width: 40%;
+            border: 1px solid #808080;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ng-app="LoginApp" ng-controller="LoginController">
+
+    </div>
+</body>
+</html>
+<script src="../Scripts/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module("LoginApp", []);
+    
+    app.controller("LoginController", function ($scope, $http) {
+        $http.post("http://192.168.31.229:88/API/login/GetAllLoginList", {}).success(function (dt) {
+            console.log(dt);
+        });
+    });
+</script>
