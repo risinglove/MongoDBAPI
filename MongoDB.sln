@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB-WEB", "MongoDB-WEB\MongoDB-WEB.csproj", "{FC7CD711-DD25-405C-BC7F-7D2492BDC685}"
 EndProject
@@ -43,6 +43,7 @@ Global
 		{812DE868-6361-4B0F-83F6-2755BB65F8B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4C16274-D5FF-4A68-80AA-A8E95DA2BA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B4C16274-D5FF-4A68-80AA-A8E95DA2BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C16274-D5FF-4A68-80AA-A8E95DA2BA5A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{B4C16274-D5FF-4A68-80AA-A8E95DA2BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4C16274-D5FF-4A68-80AA-A8E95DA2BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F705F86F-17DC-42EF-AD53-D6649DE7091B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
