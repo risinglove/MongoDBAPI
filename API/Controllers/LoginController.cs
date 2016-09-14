@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using System.Web.Mvc;
 using Model;
 using MongoDB.Bson;
+using ViewModel;
 
 namespace API.Controllers
 {
@@ -55,10 +55,9 @@ namespace API.Controllers
         /// <param name="model">模型</param>
         /// <param name="returnUrl">跳转地址</param>
         /// <returns>结果</returns>
-        public JsonData Register(ViewModel.Register model, string returnUrl)
+        [HttpPost]
+        public JsonData PostRegister(Register model)
         {
-            
-
             //if (string.IsNullOrEmpty(returnUrl))
             //{
             //    returnUrl = "";
@@ -155,6 +154,19 @@ namespace API.Controllers
                 return new JsonData() { status = "ok", msg = "修改成功", url = returnUrl };
             }
             return new JsonData() { status = "no", msg = "修改失败" };
+        }
+        #endregion
+
+        #region 根据ID删除
+        /// <summary>
+        /// 根据ID删除
+        /// </summary>
+        /// <param name="id"></param>
+        [HttpPost]
+        public JsonData PostDel(string Id)
+        {
+            _bll.Delete(ObjectId.Parse(Id));
+            return new JsonData() { status="OK" };
         }
         #endregion
 

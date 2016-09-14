@@ -58,6 +58,8 @@ namespace ViewModel
         /// </summary>
         public string VerifyCode { get; set; }
 
+        public string returnUrl { get; set; }
+
     }
 
     /// <summary>

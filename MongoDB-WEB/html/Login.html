@@ -18,17 +18,24 @@
         }
 
         .container {
-            height: 400px;
+            /*height: 400px;
             min-width: 300px;
-            max-width: 40%;
+            max-width: 40%;*/
             border: 1px solid #808080;
             margin: 20px auto;
         }
+
+            .container table tr td a {
+                padding: 5px 10px;
+                border: 1px solid #808080;
+                background-color: burlywood;
+                display: inline-block;
+            }
     </style>
 </head>
-<body>
-    <div class="container">
-        <form action="http://192.168.0.105:85/API/login/Register" method="post">
+<body ng-app="LoginAPP">
+    <div class="container" ng-controller="LoginController">
+        <form action="http://192.168.0.105:85/API/login/PostRegister" method="post">
             <p><input type="text" name="LoginName" value="jj" /></p>
             <p><input type="text" name="Password" value="123456" /></p>
             <p><input type="text" name="ConfirmPassword" value="123456" /></p>
@@ -36,33 +43,59 @@
             <p><input type="text" name="returnUrl" value="" /></p>
             <button type="submit">提交</button>
         </form>
+        <table width="100%" border="1">
+            <tr>
+                <th>姓名</th>
+                <th>密码</th>
+                <th>添加日期</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-repeat="item in List">
+                <td ng-bind="item.loginName"></td>
+                <td ng-bind="item.password"></td>
+                <td ng-bind="item.regTime"></td>
+                <td>
+                    <a ng-click="Del(item.id)">删除</a>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
-<script src="../Scripts/jquery-1.9.1.min.js"></script>
+<script src="../Scripts/jquery-1.10.2.min.js"></script>
+<script src="../Scripts/angular.js"></script>
 <script type="text/javascript">
-    $(function () {
+   
 
-        //$.ajax({
-        //    Type: "POST",
-        //    url: "http://192.168.0.105:85/API/login/Register?LoginName=JJ&Password=123456&ConfirmPassword=123456&VerifyCode=1234",
-        //    data: { "LoginName": "JK", "Password": "123456" },
-        //    dataType: "json",
-        //    success: function (dt) { console.log(dt);}
-        //});
+    var app = angular.module('LoginAPP', []);  // angular.module("LoginAPP", []);
 
-       // $.post("http://192.168.0.105:85/API/login/Register", { model: { "LoginName": "JK", "Password": "123456", "ConfirmPassword": "123456", "VerifyCode": "1234" }, returnUrl: "" }, function (data) { console.log(data); });
-
-
-        $.ajax({
-            Type: "GET",
-            url: "http://192.168.0.105:85/API/login/GetAllLoginList",
-            dataType: "json",
-            success: function (data) { console.log(data); }
-        });
-
-        function listContacts(contacts) {
-            console.log(contacts);
+    app.controller('LoginController', ["$scope", "$http", function ($scope, $http) {
+        $scope.List = [];
+        getList();
+        function getList() {
+            $http.get("http://192.168.1.215/API/login/GetAllLoginList").success(function (dt) {
+                $scope.List = dt;
+                console.log(dt);
+            });
         }
-    });
+
+
+        $scope.Del = function (id) {
+            console.log(id);
+            $http.post("http://192.168.1.215/API/login/PostDel?Id="+id, {  }).success(function (dt) {
+                getList();
+            });
+
+            //$.ajax({
+            //    Type: "POST",
+            //    url: "http://192.168.0.105:85/API/login/PostDel",
+            //    data:{"Id": id},
+            //    success: function () { getList(); }
+            //});
+
+        }
+
+    }]);
+
+
 </script>
