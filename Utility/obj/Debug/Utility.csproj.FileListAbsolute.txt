@@ -1,0 +1,11 @@
+E:\JK\MongoDBAPI\Utility\bin\Debug\Utility.dll
+E:\JK\MongoDBAPI\Utility\bin\Debug\Utility.pdb
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.dll
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.presentation.dll
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.pdb
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.xml
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.presentation.pdb
+E:\JK\MongoDBAPI\Utility\bin\Debug\zxing.presentation.xml
+E:\JK\MongoDBAPI\Utility\obj\Debug\Utility.dll
+E:\JK\MongoDBAPI\Utility\obj\Debug\Utility.pdb
+E:\JK\MongoDBAPI\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache

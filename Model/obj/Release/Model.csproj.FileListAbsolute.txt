@@ -1,0 +1,6 @@
+E:\JK\MongoDBAPI\Model\bin\Release\Model.dll
+E:\JK\MongoDBAPI\Model\bin\Release\Model.pdb
+E:\JK\MongoDBAPI\Model\bin\Release\MongoDB.Bson.dll
+E:\JK\MongoDBAPI\Model\bin\Release\MongoDB.Bson.xml
+E:\JK\MongoDBAPI\Model\obj\Release\Model.dll
+E:\JK\MongoDBAPI\Model\obj\Release\Model.pdb
