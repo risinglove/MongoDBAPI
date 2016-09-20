@@ -1,0 +1,52 @@
+16:25:19:pata : /File/2016-09-20
+16:25:19:root: E:\JK\MongoDBAPI\MongoDB-API\File\2016-09-20
+16:25:19:Read the form data
+16:25:19:This illustrates how to get the file names.
+16:47:02:pata : /File/2016-09-20
+16:47:02:root: E:\JK\MongoDBAPI\MongoDB-API\File\2016-09-20
+16:47:02:Read the form data
+16:47:02:This illustrates how to get the file names.
+18:14:03:pata : /File/uploadpic/2016-09-20
+18:14:03:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\2016-09-20
+18:14:03:Read the form data
+18:14:03:This illustrates how to get the file names.
+18:16:00:pata : /File/uploadpic/2016-09-20
+18:16:00:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\2016-09-20
+18:16:00:Read the form data
+18:16:01:This illustrates how to get the file names.
+18:52:16:pata : /File/uploadpic/20160920
+18:52:16:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:52:16:Read the form data
+18:52:16:This illustrates how to get the file names.
+18:53:17:pata : /File/uploadpic/20160920
+18:53:17:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:53:17:Read the form data
+18:53:17:This illustrates how to get the file names.
+18:55:22:pata : /File/uploadpic/20160920
+18:55:22:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:55:22:Read the form data
+18:55:22:This illustrates how to get the file names.
+18:55:50:pata : /File/uploadpic/20160920
+18:55:50:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:55:50:Read the form data
+18:55:54:This illustrates how to get the file names.
+18:56:19:pata : /File/uploadpic/20160920
+18:56:19:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:56:22:This illustrates how to get the file names.
+18:56:22:Read the form data
+18:58:24:pata : /File/uploadpic/20160920
+18:58:24:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:58:24:Read the form data
+18:58:24:This illustrates how to get the file names.
+18:58:43:pata : /File/uploadpic/20160920
+18:58:43:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+18:58:45:This illustrates how to get the file names.
+18:58:45:Read the form data
+19:00:34:pata : /File/uploadpic/20160920
+19:00:34:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+19:00:34:Read the form data
+19:00:34:This illustrates how to get the file names.
+19:01:28:pata : /File/uploadpic/20160920
+19:01:28:root: E:\JK\MongoDBAPI\MongoDB-API\File\uploadpic\20160920\original
+19:01:28:Read the form data
+19:01:28:This illustrates how to get the file names.

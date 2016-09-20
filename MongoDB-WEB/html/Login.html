@@ -64,25 +64,28 @@
 </html>
 <script src="../Scripts/jquery-1.10.2.min.js"></script>
 <script src="../Scripts/angular.js"></script>
+<script src="../Scripts/loading-bar.min.js"></script>
 <script type="text/javascript">
    
 
-    var app = angular.module('LoginAPP', []);  // angular.module("LoginAPP", []);
+    var app = angular.module('LoginAPP', ['angular-loading-bar']);  // angular.module("LoginAPP", []);
 
-    app.controller('LoginController', ["$scope", "$http", function ($scope, $http) {
+    app.controller('LoginController', ["$scope", "$http", "cfpLoadingBar", function ($scope, $http, cfpLoadingBar) {
         $scope.List = [];
         getList();
         function getList() {
+            cfpLoadingBar.start();
             $http.get("http://192.168.1.215/API/login/GetAllLoginList").success(function (dt) {
                 $scope.List = dt;
                 console.log(dt);
+                cfpLoadingBar.complete();
             });
         }
 
-
         $scope.Del = function (id) {
             console.log(id);
-            $http.post("http://192.168.1.215/API/login/PostDel?Id="+id, {  }).success(function (dt) {
+            cfpLoadingBar.start();
+            $http.post("http://192.168.0.105:85/API/login/PostDel", { "Id": id }).success(function (dt) {
                 getList();
             });
 

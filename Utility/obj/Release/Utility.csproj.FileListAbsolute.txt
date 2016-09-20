@@ -8,3 +8,4 @@ E:\JK\MongoDBAPI\Utility\bin\Release\zxing.presentation.pdb
 E:\JK\MongoDBAPI\Utility\bin\Release\zxing.presentation.xml
 E:\JK\MongoDBAPI\Utility\obj\Release\Utility.dll
 E:\JK\MongoDBAPI\Utility\obj\Release\Utility.pdb
+E:\JK\MongoDBAPI\Utility\obj\Release\Utility.csprojResolveAssemblyReference.cache

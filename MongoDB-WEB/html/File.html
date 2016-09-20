@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../Content/loading-bar.min.css" rel="stylesheet" />
+</head>
+<body ng-app="app" ng-controller="controller">
+    <!--<form enctype="multipart/form-data" method="post" action="http://192.168.0.105:85/api/uti/FileUpload">-->
+
+    <input type="file" nv-file-select="" uploader="ExcelUploader" />
+    <br />
+    <img ng-src="{{imgUrl}}" />
+    <!--<input type="submit" value="上传" />-->
+    <!--</form>-->
+</body>
+</html>
+
+<script src="../Scripts/jquery-1.10.2.min.js"></script>
+<script src="../Scripts/angular.js"></script>
+<script src="../Scripts/angular-file-upload.min.js"></script>
+<script src="../Scripts/loading-bar.min.js"></script>
+
+<script type="text/javascript">
+    ////common.load.js
+    //(function () {
+    //    'use strict';
+    //    angular
+    //        .module('common.load', [
+    //            'angular-loading-bar',
+    //            'ngAnimate'
+    //        ]);
+    //})();
+
+    ////loadBarCtrl.js
+    //(function (app) {
+    //    "use strict";
+    //    app.controller("loadCtrl", loadCtrl);
+
+    //    function loadCtrl(cfpLoadingBar) {
+    //        cfpLoadingBar.start();
+    //    }
+
+    //})(angular.module("common.load"));
+    ////fileUploadCtrl.js
+    //(function (app) {
+    //    'use strict';
+
+    //    app.controller('fileUploadCtrl', fileUploadCtrl);
+
+    //    fileUploadCtrl.$inject = ['$scope', '$http', '$timeout', 'Upload'];
+
+    //    function fileUploadCtrl($scope, $http, $timeout, Upload, cfpLoadingBar) {
+    //        $scope.upload = [];
+    //        $scope.UploadedFiles = [];
+    //        $scope.startUploading = function ($files) {
+    //            for (var i = 0; i < $files.length; i++) {
+    //                var $file = $files[i];
+    //                (function (index) {
+    //                    $scope.upload[index] = Upload.upload({
+    //                        url: "/api/upload",
+    //                        method: "POST",
+    //                        file: $file,
+    //                        withCredentials: false
+    //                    }).progress(function (evt) {
+    //                    }).success(function (data, status, headers, config) {
+    //                        $scope.UploadedFiles.push({ FileName: data.FileName, FilePath: data.LocalFilePath, FileLength: data.FileLength });
+    //                        cfpLoadingBar.complete();
+    //                    }).error(function (data, status, headers, config) {
+
+    //                    });
+    //                })(i);
+    //            }
+    //        }
+    //    }
+    //})(angular.module("common.load"));
+    ////app.js
+    //(function () {
+    //    'use strict';
+    //    angular
+    //        .module('angularUploadApp', [
+    //            'ngRoute',
+    //            'ngFileUpload',
+    //            'common.load'
+    //        ])
+    //        .config(config)
+
+    //    config.$inject = ['$routeProvider'];
+
+    //    function config($routeProvider) {
+    //        $routeProvider
+    //      .when('/', {
+    //          templateUrl: '../../app/templates/fileUpload.html',
+    //          controller: 'fileUploadCtrl'
+    //      })
+    //      .otherwise({
+    //          redirectTo: '/'
+    //      });
+    //    }
+    //})();
+
+
+
+    var app = angular.module("app", ["angularFileUpload", 'angular-loading-bar']);
+    app.controller("controller", ["$scope", "FileUploader", "cfpLoadingBar", function ($scope, fileUploader, cfpLoadingBar) {
+        $scope.imgUrl = "";
+        /*  上传文件部分  */
+        //上传人员信息
+        var ExcelUploader = $scope.ExcelUploader = new fileUploader({
+            url: 'http://192.168.0.105:85/api/uti/ImgUpload',
+            //url: 'http://192.168.1.215/api/uti/ImgUpload',
+            autoUpload: true,
+            removeAfterUpload:true,
+            queueLimit: 1,   //文件个数
+            //headers: { "Content-Type": "multipart/form-data;" },
+            formData: {}
+        });
+        ExcelUploader.filters.push({
+            name: 'XlsxFilter',
+            fn: function (item, options) {
+                cfpLoadingBar.start();
+                //if (item.name.indexOf('.xlsx') == -1) {
+                //    CustomAlert("抱歉，文件类型错误，请上传.xlsx类型的文件");
+                //    return false;
+                //}
+                return true;
+            }
+        });
+        ExcelUploader.onErrorItem = function (fileItem, response, status, headers) {
+            console.info('onErrorItem', fileItem, response, status, headers);
+            alert("抱歉，上传文件错误，后台服务器错误");
+            cfpLoadingBar.complete();
+        };
+        ExcelUploader.onCompleteItem = function (fileItem, response, status, headers) {
+            //console.log(response);
+            var item = response[0];
+            if (item.status == '1') {
+                if (item.extName.indexOf('.png') > -1 || item.extName.indexOf('.jpg') > -1)
+                { $scope.imgUrl = item.filePath; }
+            } else {
+                alert(item.errmsg);
+            }
+            // console.info('onCompleteItem', fileItem, response, status, headers);
+            cfpLoadingBar.complete();
+        };
+
+        console.info('ExcelUploader', ExcelUploader);
+
+    }]);
+
+</script>

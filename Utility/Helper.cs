@@ -109,7 +109,7 @@ namespace Utility
                 //保存图片数据
                 using (MemoryStream stream = new MemoryStream())
                 {
-                    oBmp.Save(stream, ImageFormat.Jpeg);
+                    oBmp.Save(stream, ImageFormat.Png);
                     //输出图片流
                     return stream.ToArray();
                 }
