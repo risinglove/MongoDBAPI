@@ -114,12 +114,12 @@ namespace Utility
                     newg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
 
                     //置背景色
-                    newg.Clear(Color.White);
+                    newg.Clear(Color.Transparent);
                     //画图
                     newg.DrawImage(initimage, new Rectangle(0, 0, newimage.Width, newimage.Height), new Rectangle(0, 0, initimage.Width, initimage.Height), GraphicsUnit.Pixel);
 
                     //保存缩略图
-                    newimage.Save(savepath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    newimage.Save(savepath, System.Drawing.Imaging.ImageFormat.Png);
 
                     //释放资源
                     newg.Dispose();

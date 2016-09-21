@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyDAL.cs" />
     <Compile Include="LoginDAL.cs" />
     <Compile Include="SecuretyDAL.cs" />
     <Compile Include="SysDicDAL.cs" />

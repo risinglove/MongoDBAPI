@@ -49,3 +49,7 @@ E:\JK\MongoDBAPI\MongoDB-WEB\bin\MongoDB.Bson.xml
 E:\JK\MongoDBAPI\MongoDB-WEB\bin\MongoDB.Driver.xml
 E:\JK\MongoDBAPI\MongoDB-WEB\bin\MongoDB.Driver.Legacy.xml
 E:\JK\MongoDBAPI\MongoDB-WEB\bin\DAL.pdb
+E:\JK\MongoDBAPI\MongoDB-WEB\bin\Newtonsoft.Json.dll
+E:\JK\MongoDBAPI\MongoDB-WEB\bin\Utility.dll
+E:\JK\MongoDBAPI\MongoDB-WEB\bin\Newtonsoft.Json.xml
+E:\JK\MongoDBAPI\MongoDB-WEB\bin\Utility.pdb

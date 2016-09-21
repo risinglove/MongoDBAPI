@@ -18,8 +18,7 @@ namespace API.Controllers
     public class UTIController : ApiController
     {
         private string FlieServiceUrl => ConfigurationManager.AppSettings["FlieServiceURL"];
-
-
+        
         #region 获取图形验证码
         /// <summary>
         /// 获取图形验证码
@@ -36,7 +35,6 @@ namespace API.Controllers
             return result;
         } 
         #endregion
-
 
         #region 文件上传
         /// <summary>

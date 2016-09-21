@@ -35,3 +35,5 @@ E:\JK\MongoDBAPI\BLL\bin\Debug\zxing.xml
 E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.dll
 E:\JK\MongoDBAPI\BLL\obj\Debug\BLL.pdb
+E:\JK\MongoDBAPI\BLL\bin\Debug\Newtonsoft.Json.dll
+E:\JK\MongoDBAPI\BLL\bin\Debug\Newtonsoft.Json.xml

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Model;
 using MongoDB.Bson;
 using MongoDB.Driver.Builders;
+using DAL;
+
 namespace BLL
 {
     public class LoginBLL
@@ -16,6 +18,12 @@ namespace BLL
             dal = new DAL.LoginDAL();
         }
 
+        public List<object> All()
+        {
+            CurrencyDAL<object> cd = new CurrencyDAL<object>("LoginTable");
+            return cd.GetALL();
+        }
+        
         /// <summary>
         /// 添加一条数据
         /// </summary>

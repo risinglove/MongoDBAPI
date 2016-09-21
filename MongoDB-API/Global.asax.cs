@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace API
@@ -12,6 +13,11 @@ namespace API
     {
         protected void Application_Start()
         {
+
+            ValueProviderFactories.Factories.Remove(ValueProviderFactories.Factories.OfType<JsonValueProviderFactory>().FirstOrDefault());
+            ValueProviderFactories.Factories.Add(new JsonDotNetValueProviderFactory());
+            GlobalConfiguration.Configuration.Filters.Add(new WebApiErrorHandleAttribute());
+
             GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter());  //自定义支持JSONP的方法
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }

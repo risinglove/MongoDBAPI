@@ -14,8 +14,7 @@ namespace Model
         /// <summary>
         /// ID
         /// </summary>
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonId][BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
         /// <summary>

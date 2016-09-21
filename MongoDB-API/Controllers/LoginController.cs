@@ -8,7 +8,6 @@ using System.Web.Http;
 using MongoDB.Bson;
 using static System.String;
 using ViewModel;
-using API.Models;
 
 namespace API.Controllers
 {
@@ -33,9 +32,9 @@ namespace API.Controllers
         /// </summary>
         /// <returns>返回Json格式的数据</returns>
         [HttpGet]
-        public List<Login> GetAllLoginList()
+        public List<object> GetAllLoginList()
         {
-            List<Login> list = bll.GetAll();
+            List<object> list = bll.All();
             return list;
         }
         #endregion
@@ -46,11 +45,11 @@ namespace API.Controllers
         /// </summary>
         /// <param name="id"></param>
         [HttpPost]
-        public string PostDel([FromBody]Login model)
+        public string PostDel(string id)
         {
             try
             {
-                bll.Delete(ObjectId.Parse(model.Id));
+                bll.Delete(ObjectId.Parse(id));
                 return "ok";
             }
             catch (Exception e)
@@ -69,7 +68,7 @@ namespace API.Controllers
         /// <param name="returnUrl">跳转地址</param>
         /// <returns>结果</returns>
         [HttpPost]
-        public returnModel PostRegister([FromBody]Register model)
+        public BaseResult PostRegister([FromBody]Register model)
         {
             //if (string.IsNullOrEmpty(returnUrl))
             //{
@@ -91,14 +90,14 @@ namespace API.Controllers
             };
             if (bll.Add(login))
             {
-                return new returnModel() { status = "ok", msg = "注册成功" };
+                return new BaseResult() { status = "ok", msg = "注册成功" };
             }
             //}
             //else
             //{
             //    return new JsonData() { status = "no", msg = "验证码错误" };
             //}
-            return new returnModel() { status = "no", msg = "注册失败" };
+            return new BaseResult() { status = "no", msg = "注册失败" };
         }
         #endregion
 
@@ -109,21 +108,21 @@ namespace API.Controllers
         /// <param name="model">数据模型</param>
         /// <param name="returnUrl">跳转地址</param>
         /// <returns>结果</returns>
-        public returnModel Login(ViewModel.SignIn model, string returnUrl)
+        public BaseResult Login(ViewModel.SignIn model, string returnUrl)
         {
             if (string.IsNullOrEmpty(returnUrl))
             {
                 returnUrl = "";
             }
-            returnModel json = new returnModel();
+            BaseResult json = new BaseResult();
             string code = "";  //HttpContext.Current.Session["VerifyCode"].ToString();
             if (string.IsNullOrEmpty(code))
             {
-                return new returnModel() { status = "no", msg = "验证码错误" };
+                return new BaseResult() { status = "no", msg = "验证码错误" };
             }
             if (model.VerifyCode != null && code == model.VerifyCode)
             {
-                List<Login> list = GetAllLoginList();
+                List<Login> list = null;// GetAllLoginList();
                 list = list.Where(l => l.Status == 1 && l.LoginName == model.Password && l.LoginName == model.LoginName).ToList();
                 if (list != null)
                 {
@@ -133,16 +132,16 @@ namespace API.Controllers
                         //HttpCookie hc = new HttpCookie("LoginName", model.LoginName);
                         //HttpContext.Current.Request.Cookies.Add(hc);
                     }
-                    return new returnModel() { status = "ok", msg = "登录成功" };
+                    return new BaseResult() { status = "ok", msg = "登录成功" };
                 }
                 else
                 {
-                    return new returnModel() { status = "no", msg = "用户名或密码错误" };
+                    return new BaseResult() { status = "no", msg = "用户名或密码错误" };
                 }
             }
             else
             {
-                return new returnModel() { status = "no", msg = "验证码错误" };
+                return new BaseResult() { status = "no", msg = "验证码错误" };
             }
         }
         #endregion
@@ -154,19 +153,15 @@ namespace API.Controllers
         /// <param name="model">数据模型</param>
         /// <param name="returnUrl">跳转地址</param>
         /// <returns></returns>
-        public returnModel ModifyPassword(ViewModel.ModifyPaw model, string returnUrl)
+        public BaseResult ModifyPassword(ViewModel.ModifyPaw model)
         {
-            if (string.IsNullOrEmpty(returnUrl))
-            {
-                returnUrl = "";
-            }
             Login login = bll.SelectOne(new ObjectId(model.Id));
             login.Password = model.NewPassword;
             if (bll.Update(login))
             {
-                return new returnModel() { status = "ok", msg = "修改成功" };
+                return new BaseResult() { status = "ok", msg = "修改成功" };
             }
-            return new returnModel() { status = "no", msg = "修改失败" };
+            return new BaseResult() { status = "no", msg = "修改失败" };
         }
         #endregion
 

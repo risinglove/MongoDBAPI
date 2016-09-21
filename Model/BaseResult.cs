@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace API.Models
+namespace Model
 {
-    public class returnModel
+    public class BaseResult
     {
-        /// <summary>
-        /// 错误码
-        /// </summary>
-        public string errcode { get; set; }
-
         /// <summary>
         /// 错误信息
         /// </summary>
