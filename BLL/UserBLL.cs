@@ -62,5 +62,109 @@ namespace BLL
         {
             return dal.SelectOne(objId);
         }
+
+        /// <summary>
+        /// 用户注册
+        /// </summary>
+        /// <param name="model"></param>
+        public bool Register(User model)
+        {
+            return dal.Add(model);
+        }
+
+        /// <summary>
+        /// 检验点子邮件是否已存在
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public bool Check(string name)
+        {
+            try
+            {
+                var list = GetAll();
+                list = list.Where(u => u.UserName == name).ToList();
+                if (list != null && list.Count > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public User Login(string name)
+        {
+            try
+            {
+                var list = GetAll();
+                list = list.Where(u => u.UserName == name).ToList();
+                if (list != null && list.Count == 1)
+                {
+                    return list[0];
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return null;
+        }
+        
+        public User apiLogin(string appID, string appsecret)
+        {
+            try
+            {
+                var list = GetAll();
+                list = list.Where(u => u.appID == appID && u.appsecret == appsecret).ToList();
+                if (list != null && list.Count == 1)
+                {
+                    return list[0];
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return null;
+        }
+        
+        public User Login(string name, string paw)
+        {
+            try
+            {
+                var list = GetAll();
+                list = list.Where(u => u.UserName == name && u.Password == paw).ToList();
+                if (list != null && list.Count == 1)
+                {
+                    return list[0];
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return null;
+        }
+
+        public User IdLogin(string Id)
+        {
+            try
+            {
+                var list = GetAll();
+                list = list.Where(u => u.Id == Id).ToList();
+                if (list != null && list.Count == 1)
+                {
+                    return list[0];
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return null;
+        }
+
     }
 }

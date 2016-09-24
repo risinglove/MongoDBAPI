@@ -26,7 +26,7 @@ namespace Utility
         {
             Task.Run(() =>
             {
-                DoLog(type, sender);
+                DoLog(type, sender+"\n");
             });
         }
 
@@ -46,7 +46,7 @@ namespace Utility
                 var vFileName = logPath + @"\" + fileName;
                 var fs = new FileStream(vFileName, FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
                 var sw = new StreamWriter(fs);
-                sw.WriteLine(DateTime.Now.ToLongTimeString() + ":" + msg);//记录生成log的时间
+                sw.WriteLine("\n\n"+DateTime.Now.ToLongTimeString() + ":" + msg);//记录生成log的时间
                 sw.Close();
                 fs.Close();
             }

@@ -5,6 +5,9 @@ using System.Web;
 
 namespace Model
 {
+    /// <summary>
+    /// 返回数据时使用的Model
+    /// </summary>
     public class BaseResult
     {
         /// <summary>

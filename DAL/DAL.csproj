@@ -53,9 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrencyDAL.cs" />
+    <Compile Include="DataBaseDAL.cs" />
     <Compile Include="LoginDAL.cs" />
-    <Compile Include="SecuretyDAL.cs" />
-    <Compile Include="SysDicDAL.cs" />
     <Compile Include="UserDAL.cs" />
     <Compile Include="DBUtility\DbHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +63,10 @@
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{812de868-6361-4b0f-83f6-2755bb65f8b0}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{bdb90de1-5bb5-4b09-bc70-9f539acec6a2}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

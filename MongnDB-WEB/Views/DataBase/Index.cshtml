@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="height:5rem;">
+</div>
+<div class="row" ng-app="DataBaseApp" ng-controller="DataBaseController">
+    <div class="col-md-2">
+        <section>
+            <ul class="nav nav-pills nav-stacked list-group-item">
+                <li ng-repeat="item in list" ng-click="Select(item)"><button  class="btn btn-block  " ng-class="{'btn-primary':item.Id==Table.Id,'btn-default':item.Id!=Table.Id}" ng-bind="item.TableName"></button></li>
+                <li><button class="btn btn-default btn-block marginTop015" type="button">创建Class</button></li>
+            </ul>
+        </section>
+    </div>
+    <div class="col-md-10">
+        <section>
+            <div class="row-fluid">
+                <div class="row-fluid marginBottom006">
+                    <div class="span12">
+                        <div class="btn-group">
+                            <button class="btn btn-default" type="button" data-toggle="modal" data-target="#Add-Row">添加行</button>
+                            <button class="btn btn-default disabled" type="button">删除行</button>
+                            <button class="btn btn-default" type="button">添加列</button>
+                            <button class="btn btn-default" type="button">删除列</button>
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn dropdown-toggle  btn-default">更多<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>重命名列</a>
+                                    </li>
+                                    <li>
+                                        <a>删除Class</a>
+                                    </li>
+                                    <li>
+                                        <a>删除所有数据</a>
+                                    </li>
+                                    <li>
+                                        <a>导出数据</a>
+                                    </li>
+                                    <li>
+                                        <a>导出全部Class</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" /></th>
+                                    <th>Id</th>
+                                    <th ng-repeat="item in Table.list" ng-bind="item.name">
+                                    </th>
+                                    <th>CreateDate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in TableData">
+                                    <td><input type="checkbox" /></td>
+                                    <td ng-repeat="value in item">{{value}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  添加行数据  -->
+    <div id="Add-Row" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">
+                标题栏
+            </h3>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" id="AddRowData">
+                <div class="form-group" ng-repeat="item in Table.list">
+                    <label class="col-md-2 control-label" ng-bind="item.name"></label>
+                    <div class="col-md-10">
+                        <input class="form-control" name="{{item.name}}" ng-if="item.type=='int'||item.type=='decimal'" type="number">
+                        <input class="form-control" name="{{item.name}}" ng-if="item.type=='string'" type="text">
+                        <input class="form-control date datetime" name="{{item.name}}" ng-if="item.type=='date'" type="text">
+                        <input class="" form-control" name="{{item.name}}" ng-if="item.type=='bool'" type="checkbox" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" ng-click="SubmitRow()">保存设置</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+@section Scripts {
+    <script type="text/javascript">
+        var app = angular.module("DataBaseApp", []);
+
+        app.service('DataBaseService', ['$http', function ($http) {
+            this.getDataBaseList = function () {
+                var httpService = $http.get("/Service/GetDataBaseList?r=" + Math.random());
+                return httpService;
+            }
+            this.getTableData = function (tableName) {
+                var httpService = $http.post("/Service/GetTableData?r=" + Math.random(), { "tableName": tableName });
+                return httpService;
+            }
+
+            this.addTableRowData = function (json, tableName) {
+                var httpService = $http.post("/Service/AddTableRowData?r=" + Math.random(), { "json": json, "tableName": tableName });
+                return httpService;
+            }
+        }]);
+
+        app.controller('DataBaseController', ["$scope", "$http", "DataBaseService", function ($scope, $http, DataBaseService) {
+            $scope.list = [];
+            $scope.Table = {};
+            $scope.TableData = [];
+            $scope.Init = function () {
+                DataBaseService.getDataBaseList().success(function (data) {
+                    console.log(data);
+                    $scope.list = data;
+                    $scope.Table = data[0];
+                });
+            }
+
+            $scope.Select = function (item) {
+                $scope.Table = item;
+            }
+
+            $scope.$watch("Table", function (newValue, oldValue, scope) {
+                if (newValue && newValue.TableName) {
+                    DataBaseService.getTableData(newValue.TableName).success(function (dt) {
+                        console.log(dt);
+                        $scope.TableData = dt;
+                        $('input.datetime').each(function () {
+                            $(this).datepicker({ language: 'zh-CN', format: 'yyyy-mm-dd' });
+                        });
+                    }, 500);
+                }
+            });
+
+            $scope.SubmitRow = function () {
+                var fields = $("#AddRowData").serializeArray();
+                var o = {};
+                jQuery.each(fields, function (i, fields) {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];  // 将o[label]初始为嵌套数组，如o={a,[a,b,c]}
+                        }
+                        o[this.name].push(this.value || ''); // 将值插入o[label]
+                    } else {
+                        o[this.name] = this.value || '';  // 第一次在o中插入o[label]
+                    }
+                });
+                DataBaseService.addTableRowData(o, $scope.Table.TableName).success(function (dt) {
+                    console.log(dt);
+                });
+                console.log(JSON.stringify(o));
+            }
+
+            $scope.Init();
+
+        }]);
+
+    </script>
+}

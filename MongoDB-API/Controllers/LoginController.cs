@@ -8,6 +8,7 @@ using System.Web.Http;
 using MongoDB.Bson;
 using static System.String;
 using ViewModel;
+using BLL;
 
 namespace API.Controllers
 {
@@ -25,7 +26,7 @@ namespace API.Controllers
                 return _bll;
             }
         }
-        
+
         #region 获取Login的全部数据
         /// <summary>
         /// 获取Login的全部数据
@@ -38,7 +39,7 @@ namespace API.Controllers
             return list;
         }
         #endregion
-        
+
         #region 根据ID删除
         /// <summary>
         /// 根据ID删除
@@ -165,5 +166,33 @@ namespace API.Controllers
         }
         #endregion
 
+        [HttpPost]
+        public void Add()
+        {
+            DataBaseBLL dbBll = new DataBaseBLL();
+            dbBll.GenerateUserDLL("57e3932ea95dd03f4432d232");
+
+            //try
+            //{
+            //    List<Column> list = new List<Column>();
+            //    list.Add(new Column() { name = "Name", type = "string" });
+            //    list.Add(new Column() { name = "Number ", type = "int" });
+            //    list.Add(new Column() { name = "Bool", type = "bool" });
+            //    list.Add(new Column() { name = "Price", type = "decimal" });
+            //    list.Add(new Column() { name = "Date", type = "date" });
+            //    DataBaseModel model = new DataBaseModel() { TableName = "Classes", UserID = "57e3932ea95dd03f4432d232", list = list };
+
+            //    bll.AddTest(model);
+            //}
+            //catch (Exception e)
+            //{
+            //    throw;
+            //}
+
+        }
+
+
     }
+    
+
 }

@@ -21,11 +21,9 @@ namespace API.Controllers
         {
             var ctx = HttpContext.Current;
 
-            List<string> list = new List<string>() { "name", "age", "sex" };
+            //List<string> list = new List<string>() { "LoginName", "Password", "Status" , "RegTime" };
+            //ModelHelper.CreateClass("LoginTable", list);
             
-            ModelHelper.CreateClass("Student", list, HttpContext.Current.Server.MapPath("~/MyDLL/"));
-
-
             string _json = dyn.ToString();
             return await Task.Run(() =>
             {

@@ -23,6 +23,13 @@ namespace BLL
             CurrencyDAL<object> cd = new CurrencyDAL<object>("LoginTable");
             return cd.GetALL();
         }
+
+        public void AddTest(object model)
+        {
+            CurrencyDAL<object> cd = new CurrencyDAL<object>("DataBaseTable");
+            cd.Add(model);
+        }
+
         
         /// <summary>
         /// 添加一条数据
@@ -70,6 +77,7 @@ namespace BLL
         {
             return dal.SelectOne(objId);
         }
+        
 
     }
 }

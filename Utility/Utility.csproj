@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Model_57e3932ea95dd03f4432d232">
+      <HintPath>..\MongoDB-API\MyDLL\Model_57e3932ea95dd03f4432d232.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -59,9 +62,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemUtil.cs" />
     <Compile Include="Translate.cs" />
+    <Compile Include="TypeSafe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{bdb90de1-5bb5-4b09-bc70-9f539acec6a2}</Project>
+      <Name>ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

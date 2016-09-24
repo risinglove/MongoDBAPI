@@ -7,9 +7,14 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
 using MongoDB.Bson;
+using Utility;
+using System.Reflection;
 
 namespace Model
 {
+    /// <summary>
+    /// 前台提交数据时使用的Model
+    /// </summary>
     public class Currency
     {
         /// <summary>
@@ -32,20 +37,22 @@ namespace Model
         ///// </summary>
         //public string list { get; set; }
 
-        public dynamic Data
+        public object Data
         {
             get
             {
-                dynamic model = new StrongModel();
-                try
+                object model = null;
+                if (data != null && data.Count > 0)
                 {
-                    foreach (string current in data.Keys)
+                    try
                     {
-                        model[current] = data[current];
+                        model = ModelHelper.GetModel(TableName);
+                        model = TypeSafe.SafeObject(model, data);
                     }
-                }
-                catch (Exception e)
-                {
+                    catch (Exception e)
+                    {
+                        return null;
+                    }
                 }
                 return model;
             }

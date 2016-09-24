@@ -29,7 +29,7 @@ namespace BLL
             {
                 resultBase.status = "002"; resultBase.errmsg = "参数不能为空";
                 result = JsonConvert.SerializeObject(resultBase);
-                LogHelper.WriteLog("WebApi", result);
+                LogHelper.WriteLog(result, "WebApi");
                 return result;
             }
             try
@@ -40,7 +40,7 @@ namespace BLL
             {
                 resultBase.status = "002"; resultBase.errmsg = "Json字符串错误";
                 result = JsonConvert.SerializeObject(resultBase);
-                LogHelper.WriteLog("WebApi", result);
+                LogHelper.WriteLog(result, "WebApi");
                 return result;
             }
 
@@ -48,7 +48,7 @@ namespace BLL
             if (string.IsNullOrWhiteSpace(model.OperationType))
             {
                 resultBase.status = "002"; resultBase.errmsg = "操作类型不能为空";
-                result = JsonConvert.SerializeObject(resultBase);
+                LogHelper.WriteLog(result, "WebApi");
                 LogHelper.WriteLog("WebApi", result);
                 return result;
             }
@@ -56,7 +56,7 @@ namespace BLL
             {
                 resultBase.status = "002"; resultBase.errmsg = "表名不能为空";
                 result = JsonConvert.SerializeObject(resultBase);
-                LogHelper.WriteLog("WebApi", result);
+                LogHelper.WriteLog(result, "WebApi");
                 return result;
             }
 
@@ -65,11 +65,11 @@ namespace BLL
             {
                 case "001":  //查询
                     List<object> list = dal.GetALL();
-                    resultBase.count = list.Count;
+                    resultBase.count = list==null?0: list.Count;
                     resultBase.data = list;
                     resultBase.status = "001";
                     result = JsonConvert.SerializeObject(resultBase);
-                    LogHelper.WriteLog("WebApi", result);
+                    LogHelper.WriteLog(result,"WebApi");
                     break;
                 case "002":  //添加数据
                     if (dal.Add(model.Data))
@@ -83,7 +83,7 @@ namespace BLL
                         resultBase.errmsg = "添加失败";
                     }
                     result = JsonConvert.SerializeObject(resultBase);
-                    LogHelper.WriteLog("WebApi", result);
+                    LogHelper.WriteLog(result, "WebApi");
                     break;
             }
             return result;

@@ -58,11 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyBLL.cs" />
+    <Compile Include="DataBaseBLL.cs" />
     <Compile Include="Insurace.cs" />
     <Compile Include="LoginBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecuretyBLL.cs" />
-    <Compile Include="SysDicBLL.cs" />
     <Compile Include="UserBLL.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +77,10 @@
     <ProjectReference Include="..\Utility\Utility.csproj">
       <Project>{f705f86f-17dc-42ef-ad53-d6649de7091b}</Project>
       <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{bdb90de1-5bb5-4b09-bc70-9f539acec6a2}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

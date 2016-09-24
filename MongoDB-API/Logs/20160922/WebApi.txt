@@ -1,0 +1,188 @@
+﻿
+
+10:48:48:{"errmsg":null,"status":"001","msg":null,"count":0,"data":null,"timestamp":1474512528}
+
+
+
+10:48:48:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474512528}
+
+
+
+10:48:49:{"errmsg":null,"status":"001","msg":null,"count":7,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e341eefd8f3c38405eea30","LoginName":"123456","Password":"111111","Status":null,"RegTime":null},{"Id":"57e34209fd8f3c38405eea31","LoginName":"123456","Password":"111111","Status":null,"RegTime":null},{"Id":"57e34599fd8f3f384023dc4f","LoginName":"123456","Password":"111111","Status":null,"RegTime":null},{"Id":"57e3461efd8f403840317755","LoginName":"123456","Password":"111111","Status":null,"RegTime":null},{"Id":"57e34645fd8f41384060c56f","LoginName":"123456","Password":"111111","Status":null,"RegTime":null},{"Id":"57e34690fd8f423840523edd","LoginName":"123456","Password":"111111","Status":null,"RegTime":null}],"timestamp":1474512529}
+
+
+
+10:51:17:{"errmsg":null,"status":"001","msg":null,"count":1,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"}],"timestamp":1474512677}
+
+
+
+10:51:18:{"errmsg":null,"status":"001","msg":null,"count":1,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"}],"timestamp":1474512678}
+
+
+
+10:53:06:{"errmsg":null,"status":"001","msg":null,"count":1,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"}],"timestamp":1474512786}
+
+
+
+10:53:07:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474512787}
+
+
+
+10:53:08:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512788}
+
+
+
+10:53:10:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512790}
+
+
+
+10:53:11:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512791}
+
+
+
+10:53:12:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512792}
+
+
+
+10:53:12:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512792}
+
+
+
+10:53:12:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512792}
+
+
+
+10:53:12:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512792}
+
+
+
+10:53:13:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e34793fd8f423840523ede","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474512793}
+
+
+
+11:00:27:{"errmsg":null,"status":"001","msg":null,"count":1,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"}],"timestamp":1474513227}
+
+
+
+11:00:28:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513228}
+
+
+
+11:00:30:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513230}
+
+
+
+11:00:31:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513231}
+
+
+
+11:00:31:{"errmsg":null,"status":"001","msg":null,"count":3,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513231}
+
+
+
+11:02:10:{"errmsg":null,"status":"001","msg":null,"count":3,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513330}
+
+
+
+11:02:11:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513331}
+
+
+
+11:02:12:{"errmsg":null,"status":"001","msg":null,"count":4,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513332}
+
+
+
+11:02:13:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513333}
+
+
+
+11:02:14:{"errmsg":null,"status":"001","msg":null,"count":5,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513334}
+
+
+
+11:02:15:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513335}
+
+
+
+11:02:15:{"errmsg":null,"status":"001","msg":null,"count":6,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513335}
+
+
+
+11:02:17:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513337}
+
+
+
+11:02:18:{"errmsg":null,"status":"001","msg":null,"count":7,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b9fd8f423840523ee4","LoginName":"123456","Password":"3","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513338}
+
+
+
+11:03:06:{"errmsg":null,"status":"001","msg":null,"count":7,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b9fd8f423840523ee4","LoginName":"123456","Password":"3","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513386}
+
+
+
+11:03:07:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513387}
+
+
+
+11:03:08:{"errmsg":null,"status":"001","msg":null,"count":8,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b9fd8f423840523ee4","LoginName":"123456","Password":"3","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349ebfd8f423840523ee5","LoginName":"123456","Password":"0","Status":"0","RegTime":"2016-09-22"}],"timestamp":1474513388}
+
+
+
+11:03:09:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513389}
+
+
+
+11:03:10:{"errmsg":null,"status":"001","msg":null,"count":9,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b9fd8f423840523ee4","LoginName":"123456","Password":"3","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349ebfd8f423840523ee5","LoginName":"123456","Password":"0","Status":"0","RegTime":"2016-09-22"},{"Id":"57e349edfd8f423840523ee6","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"}],"timestamp":1474513390}
+
+
+
+11:03:11:{"errmsg":null,"status":"001","msg":"添加成功","count":1,"data":null,"timestamp":1474513391}
+
+
+
+11:03:12:{"errmsg":null,"status":"001","msg":null,"count":10,"data":[{"_id":"57e3396afd8f3c12c40c9336","LoginName":"jj","Password":"123456","Status":1,"RegTime":"2016/9/22 9:52:42"},{"Id":"57e3494cfd8f423840523edf","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e3494ffd8f423840523ee0","LoginName":"123456","Password":"111111","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b3fd8f423840523ee1","LoginName":"123456","Password":"0","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b5fd8f423840523ee2","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b7fd8f423840523ee3","LoginName":"123456","Password":"2","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349b9fd8f423840523ee4","LoginName":"123456","Password":"3","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349ebfd8f423840523ee5","LoginName":"123456","Password":"0","Status":"0","RegTime":"2016-09-22"},{"Id":"57e349edfd8f423840523ee6","LoginName":"123456","Password":"1","Status":"1","RegTime":"2016-09-22"},{"Id":"57e349effd8f423840523ee7","LoginName":"123456","Password":"2","Status":"0","RegTime":"2016-09-22"}],"timestamp":1474513392}
+
+
+
+11:27:09:{"errmsg":null,"status":"001","msg":null,"count":1,"data":[{"_id":"","TableName":"test","UserID":123,"List":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]}],"timestamp":1474514829}
+
+
+
+12:16:34:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474517794}
+
+
+
+12:25:59:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474518359}
+
+
+
+12:27:58:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","List":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474518478}
+
+
+
+12:30:05:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474518605}
+
+
+
+12:35:17:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474518917}
+
+
+
+12:48:59:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474519739}
+
+
+
+12:52:07:{"errmsg":null,"status":"001","msg":null,"count":2,"data":[{"_id":"57e35a36fd8f3c2de8dcb077","TableName":"test","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"1","type":"int"},{"Name":"2","type":"string"},{"Name":"3","type":"date"}]},{"_id":"57e35a71fd8f3d2de8ec2562","TableName":"Student","UserID":"57e35022fd8f47384071d6d9","list":[{"Name":"id","type":"int"},{"Name":"name","type":"string"},{"Name":"dt","type":"date"}]}],"timestamp":1474519927}
+
+
+
+14:19:14:{"errmsg":null,"status":"001","msg":null,"count":0,"data":null,"timestamp":1474525154}
+
+
+
+14:19:16:{"errmsg":null,"status":"001","msg":null,"count":0,"data":null,"timestamp":1474525156}
+
+
+
+14:19:17:{"errmsg":null,"status":"001","msg":null,"count":0,"data":null,"timestamp":1474525157}
+
