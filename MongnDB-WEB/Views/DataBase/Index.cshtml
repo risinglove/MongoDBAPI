@@ -55,7 +55,8 @@
                                 <tr>
                                     <th><input type="checkbox" /></th>
                                     <th>Id</th>
-                                    <th ng-repeat="item in Table.list" ng-bind="item.name">
+                                    <th ng-repeat="item in Table.list">
+                                        <span ng-bind="item.name"></span><span ng-bind="item.type" style="color:#ccc;margin-left:.4rem;"></span>
                                     </th>
                                     <th>CreateDate</th>
                                 </tr>
