@@ -1,0 +1,319 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+.marginTop001 {
+    margin-top: 2.9rem;
+}
+
+.marginTop002 {
+    margin-top: 2.5rem;
+}
+
+.marginTop003 {
+    margin-top: 3rem;
+}
+.marginTop015 {
+    margin-top: 1.5rem;
+}
+
+.marginRight001 {
+    margin-right: .5rem;
+}
+
+.marginBottom001 {
+    margin-bottom: 15px;
+}
+
+.marginBottom002 {
+    margin-bottom: .75rem;
+}
+
+.marginBottom012 {
+    margin-bottom: 12px;
+}
+
+.marginBottom005 {
+    margin-bottom: 5px;
+}
+
+.marginBottom006 {
+    margin-bottom: 2rem;
+}
+
+.marginBottom007 {
+    margin-bottom: 3rem;
+}
+
+.paddingRight001 {
+    padding-right: .75rem;
+}
+
+.paddingLeft001 {
+    padding-left: .75rem;
+}
+
+.paddingBottom001 {
+    padding-bottom: 10px;
+}
+
+.paddingBottom002 {
+    padding-bottom: .75rem;
+}
+
+.paddingBottom003 {
+    padding-bottom: 15px;
+}
+
+.paddingBottom004 {
+    padding-bottom: 25px;
+}
+
+.paddingBottom005 {
+    padding-bottom: 50px;
+}
+
+.padding000 {
+    padding: 0 5px;
+}
+
+.padding001 {
+    padding: 10px 0;
+}
+
+.padding002 {
+    padding: 10px;
+}
+
+.padding003 {
+    padding: 20px 0;
+}
+
+.padding004 {
+    padding: 5px 0;
+}
+
+.padding005 {
+    padding: 15px;
+}
+
+.padding006 {
+    padding: .75rem;
+}
+
+.padding007 {
+    padding: .5rem 0;
+}
+
+.padding008 {
+    padding: 2.5px 0;
+}
+
+.padding009 {
+    padding: .75rem .75rem 3.75rem .75rem;
+}
+
+.padding010 {
+    padding: 0 0 3.75rem 0;
+}
+
+.padding011 {
+    padding: 8.75rem 0 0 0;
+}
+
+.padding012 {
+    padding: 15px 10px;
+}
+
+.padding013 {
+    padding: 5px 10px;
+}
+
+.padding014 {
+    padding: 10px 10px 0 10px;
+}
+
+.padding015 {
+    padding: 0 10px;
+}
+
+.padding016 {
+    padding: .5rem 10px;
+}
+
+.padding017 {
+    padding: 20px 20px 15px 20px;
+}
+
+.padding018 {
+    padding: 0 15px;
+}
+
+.padding019 {
+    padding: 20px 10px 40px 10px;
+}
+
+.padding020 {
+    padding: 0 25px;
+}
+
+.padding021 {
+    padding: 20px;
+}
+
+.padding022 {
+    padding: 0 .75rem;
+}
+
+.margin001 {
+    margin: 12px 0;
+}
+
+.margin002 {
+    margin: .75rem;
+}
+
+.margin003 {
+    margin: 15px .75rem;
+}
+
+.margin004 {
+    margin: 25px 0;
+}
+
+.margin005 {
+    margin: .5rem;
+}
+
+.margin006 {
+    margin: 0 10px;
+}
+
+.margin007 {
+    margin: 0 .75rem;
+}
+
+.margin008 {
+    margin: .75rem 0;
+}
+
+.line001 {
+    border-bottom: 1px solid #fff;
+}
+
+.line002 {
+    border-bottom: 1px solid #fba24b;
+}
+
+.line003 {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.line004 {
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.line005 {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.line006 {
+    border-right: 1px solid #e0e0e0;
+}
+
+.line007 {
+    border-left: 3px solid #f0b984;
+}
+
+.line008 {
+    border-top: 1px solid #e0e0e0;
+}
+
+.line009 {
+    border-left: 1px solid #fff;
+}
+
+.line010 {
+    border-left: 1px solid #e0e0e0;
+}
+
+.line011 {
+    border-right: 1px solid #e2c9b0;
+}
+
+.line012 {
+    border-right: 1px solid #fff;
+}
+
+.boxborder001 {
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.boxborder002 {
+    border: 1px solid #fba24b;
+}
+
+.boxborder003 {
+    border: 1px solid #cacaca;
+}
+
+.boxRadius8 {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.boxRadius8_2 {
+    border: 1px solid #fba24b;
+    border-radius: 8px;
+}
+
+.boxRadius3 {
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+.boxRadius2-t2 {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+
+.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000000;}.modal-backdrop.fade{opacity:0;}
+.modal-backdrop,.modal-backdrop.fade.in{opacity:0.8;filter:alpha(opacity=80);}
+.modal{bottom: initial;position:fixed;top:10%;left:50%;z-index:1050;width:560px;margin-left:-280px;background-color:#ffffff;border:1px solid #999;border:1px solid rgba(0, 0, 0, 0.3);*border:1px solid #999;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;-webkit-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);-moz-box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);box-shadow:0 3px 7px rgba(0, 0, 0, 0.3);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;outline:none;}.modal.fade{-webkit-transition:opacity .3s linear, top .3s ease-out;-moz-transition:opacity .3s linear, top .3s ease-out;-o-transition:opacity .3s linear, top .3s ease-out;transition:opacity .3s linear, top .3s ease-out;top:-25%;}
+.modal.fade.in{top:10%;}
+.modal-header{padding:9px 15px;border-bottom:1px solid #eee;}.modal-header .close{margin-top:2px;}
+.modal-header h3{margin:0;line-height:30px;}
+.modal-body{position:relative;overflow-y:auto;max-height:400px;padding:15px;}
+.modal-form{margin-bottom:0;}
+.modal-footer{padding:14px 15px 15px;margin-bottom:0;text-align:right;background-color:#f5f5f5;border-top:1px solid #ddd;-webkit-border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px;border-radius:0 0 6px 6px;-webkit-box-shadow:inset 0 1px 0 #ffffff;-moz-box-shadow:inset 0 1px 0 #ffffff;box-shadow:inset 0 1px 0 #ffffff;*zoom:1;}.modal-footer:before,.modal-footer:after{display:table;content:"";line-height:0;}
+.modal-footer:after{clear:both;}
+.modal-footer .btn+.btn{margin-left:5px;margin-bottom:0;}
+.modal-footer .btn-group .btn+.btn{margin-left:-1px;}
+.modal-footer .btn-block+.btn-block{margin-left:0;}

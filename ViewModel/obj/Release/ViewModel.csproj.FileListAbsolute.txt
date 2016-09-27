@@ -2,3 +2,6 @@ E:\JK\MongoDBAPI\ViewModel\bin\Release\ViewModel.dll
 E:\JK\MongoDBAPI\ViewModel\bin\Release\ViewModel.pdb
 E:\JK\MongoDBAPI\ViewModel\obj\Release\ViewModel.dll
 E:\JK\MongoDBAPI\ViewModel\obj\Release\ViewModel.pdb
+E:\JK\MongoDBAPI\ViewModel\bin\Release\MongoDB.Bson.dll
+E:\JK\MongoDBAPI\ViewModel\bin\Release\MongoDB.Bson.xml
+E:\JK\MongoDBAPI\ViewModel\obj\Release\ViewModel.csprojResolveAssemblyReference.cache

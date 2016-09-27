@@ -2,9 +2,11 @@
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using ViewModel;
@@ -23,18 +25,63 @@ namespace Utility
         /// <param name="para">dll存储的绝对路径</param>
         /// <param name="assemblyName">命名空间名（默认为Model）</param>
         /// <returns></returns>
-        public static object CreateUserDll(string UserId, List<DataBaseModel> list, string assemblyName = "Model")
+        public static object CreateUserDll(string UserId, List<DataBaseModel> list, string path = "", string assemblyName = "Model")
         {
             try
             {
                 if (!string.IsNullOrWhiteSpace(UserId) && list != null && list.Count > 0)
                 {
+                    path = string.IsNullOrWhiteSpace(path) ? AppDomain.CurrentDomain.BaseDirectory + @"MyDLL\" + assemblyName + "_" + UserId + ".dll" : path + @"\" + assemblyName + "_" + UserId + ".dll";
+                    try
+                    {
+                        if (File.Exists(path))
+                        {
+                            FileStream OpenInputStream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                            OpenInputStream.Dispose();
+                            //存在
+                            File.SetAttributes(path, FileAttributes.Normal);
+                            //计算扇区数目
+                            double sectors = Math.Ceiling(new FileInfo(path).Length / 512.0);
+                            // 创建一个同样大小的虚拟缓存
+                            byte[] dummyBuffer = new byte[512];
+                            // 创建一个加密随机数目生成器
+                            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+                            // 打开这个文件的FileStream
+                            FileStream inputStream = new FileStream(path, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
+                            //for (int currentPass = 0; currentPass < timesToWrite; currentPass++)
+                            //{
+                                // 文件流位置
+                                inputStream.Position = 0;
+                                //循环所有的扇区
+                                for (int sectorsWritten = 0; sectorsWritten < sectors; sectorsWritten++)
+                                {
+                                    //把垃圾数据填充到流中
+                                    rng.GetBytes(dummyBuffer);
+                                    // 写入文件流中
+                                    inputStream.Write(dummyBuffer, 0, dummyBuffer.Length);
+                                }
+                            //}
+                            // 清空文件
+                            inputStream.SetLength(0);
+                            // 关闭文件流
+                            inputStream.Close();
+                            // 清空原始日期需要
+                            DateTime dt = new DateTime(2037, 1, 1, 0, 0, 0);
+                            File.SetCreationTime(path, dt);
+                            File.SetLastAccessTime(path, dt);
+                            File.SetLastWriteTime(path, dt);
+                            File.Delete(path);
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                    }
                     var provider = new CSharpCodeProvider();
                     //设置编译参数。  
                     var cp = new CompilerParameters();
                     cp.GenerateExecutable = false;
                     cp.GenerateInMemory = true;
-                    cp.OutputAssembly = AppDomain.CurrentDomain.BaseDirectory + "/MyDLL/" + assemblyName + "_" + UserId + ".dll";
+                    cp.OutputAssembly = path;
                     // Generate debug information.
                     cp.IncludeDebugInformation = true;
                     // Save the assembly as a physical file.
@@ -182,14 +229,14 @@ namespace Utility
         /// </summary>
         /// <param name="para">dll存储的绝对路径</param>
         /// <returns></returns>
-        public static object GetModel(string className,string assemblyName = "Model",string path="")
+        public static object GetModel(string className, string assemblyName = "Model", string path = "")
         {
             Assembly ass;
             //Type type;
             object obj = null;
             try
             {
-                path = string.IsNullOrWhiteSpace(path) ? AppDomain.CurrentDomain.BaseDirectory + "/MyDLL/" + assemblyName + "_" + className + ".dll" : path+ "/" + assemblyName + "_" + className + ".dll";
+                path = string.IsNullOrWhiteSpace(path) ? AppDomain.CurrentDomain.BaseDirectory + "/MyDLL/" + assemblyName + "_" + className + ".dll" : path + "/" + assemblyName + "_" + className + ".dll";
                 ass = Assembly.LoadFile(path);//要绝对路径
                 obj = ass.CreateInstance("Utility." + assemblyName + "." + className);//必须使用名称空间+类名称
                 return obj;
@@ -206,7 +253,7 @@ namespace Utility
         /// </summary>
         /// <param name="para">dll存储的绝对路径</param>
         /// <returns></returns>
-        public static object GetModel(string className,string UserId, string assemblyName = "Model", string path = "")
+        public static object GetModel(string className, string UserId, string assemblyName = "Model", string path = "")
         {
             Assembly ass;
             //Type type;

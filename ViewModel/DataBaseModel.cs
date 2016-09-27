@@ -30,7 +30,7 @@ namespace ViewModel
         /// <summary>
         /// 对应表中的列名以及列对应的属性
         /// </summary>
-        public List<Column> list { get; set; }
+        public List<Column> list { get; set; } = new List<Column>();
 
     }
 

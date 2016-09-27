@@ -19,3 +19,7 @@ E:\JK\MongoDBAPI\BLL\bin\Release\zxing.xml
 E:\JK\MongoDBAPI\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
 E:\JK\MongoDBAPI\BLL\obj\Release\BLL.dll
 E:\JK\MongoDBAPI\BLL\obj\Release\BLL.pdb
+E:\JK\MongoDBAPI\BLL\bin\Release\Newtonsoft.Json.dll
+E:\JK\MongoDBAPI\BLL\bin\Release\ViewModel.dll
+E:\JK\MongoDBAPI\BLL\bin\Release\ViewModel.pdb
+E:\JK\MongoDBAPI\BLL\bin\Release\Newtonsoft.Json.xml

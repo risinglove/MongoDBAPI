@@ -9,3 +9,9 @@ E:\JK\MongoDBAPI\Utility\bin\Release\zxing.presentation.xml
 E:\JK\MongoDBAPI\Utility\obj\Release\Utility.dll
 E:\JK\MongoDBAPI\Utility\obj\Release\Utility.pdb
 E:\JK\MongoDBAPI\Utility\obj\Release\Utility.csprojResolveAssemblyReference.cache
+E:\JK\MongoDBAPI\Utility\bin\Release\Model_57e3932ea95dd03f4432d232.dll
+E:\JK\MongoDBAPI\Utility\bin\Release\ViewModel.dll
+E:\JK\MongoDBAPI\Utility\bin\Release\MongoDB.Bson.dll
+E:\JK\MongoDBAPI\Utility\bin\Release\ViewModel.pdb
+E:\JK\MongoDBAPI\Utility\bin\Release\Model_57e3932ea95dd03f4432d232.pdb
+E:\JK\MongoDBAPI\Utility\bin\Release\MongoDB.Bson.xml

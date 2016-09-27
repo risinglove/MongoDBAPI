@@ -1,0 +1,7 @@
+E:\JK\MongoDBAPI\ViewModel\bin\Debug\ViewModel.dll
+E:\JK\MongoDBAPI\ViewModel\bin\Debug\ViewModel.pdb
+E:\JK\MongoDBAPI\ViewModel\bin\Debug\MongoDB.Bson.dll
+E:\JK\MongoDBAPI\ViewModel\bin\Debug\MongoDB.Bson.xml
+E:\JK\MongoDBAPI\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
+E:\JK\MongoDBAPI\ViewModel\obj\Debug\ViewModel.dll
+E:\JK\MongoDBAPI\ViewModel\obj\Debug\ViewModel.pdb

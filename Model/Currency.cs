@@ -46,7 +46,7 @@ namespace Model
                 {
                     try
                     {
-                        model = ModelHelper.GetModel(TableName);
+                        model = ModelHelper.GetModel(TableName, UserId: "57e3932ea95dd03f4432d232");
                         model = TypeSafe.SafeObject(model, data);
                     }
                     catch (Exception e)

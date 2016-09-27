@@ -1,4 +1,6 @@
-﻿using MongnDB_WEB.Function;
+﻿using BLL;
+using MongnDB_WEB.Function;
+using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +8,7 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using Utility;
+using ViewModel;
 
 namespace MongnDB_WEB.Controllers
 {
@@ -78,6 +81,55 @@ namespace MongnDB_WEB.Controllers
             {
             }
             return Json("no");
+        }
+        #endregion
+
+
+        #region 添加表
+        /// <summary>
+        /// 添加表
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <returns></returns>
+        public JsonResult AddTable(string tableName)
+        {
+            DataBaseBLL dbBll = new DataBaseBLL();
+            DataBaseModel model = new DataBaseModel() { TableName = tableName, UserID = CurrentUser.Id };
+            if (dbBll.Add(model))
+            {
+                dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
+                return Json("ok");
+            }
+            else { return Json("no"); }
+        }
+        #endregion
+
+        #region 添加列
+        /// <summary>
+        /// 添加列
+        /// </summary>
+        /// <param name="tableId"></param>
+        /// <param name="name"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public JsonResult AddColumn(string tableId, string name, string type)
+        {
+            DataBaseBLL dbBll = new DataBaseBLL();
+            DataBaseModel model = dbBll.SelectOne(tableId);
+            if (model.list == null)
+            {
+                model.list = new List<Column>() { new Column() { name = name, type = type } };
+            }
+            else
+            {
+                model.list.Add(new Column() { name = name, type = type });
+            }
+            if (dbBll.Update(model))
+            {
+                dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
+                return Json("ok");
+            }
+            else { return Json("no"); }
         }
         #endregion
 

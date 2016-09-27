@@ -4,15 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utility;
+using ViewModel;
 
 namespace BLL
 {
-   public class CurrencyBLL
+    public class CurrencyBLL
     {
         private DAL.CurrencyDAL<object> dal = null;
+        private string tName = "";
+
 
         public CurrencyBLL(string tableName)
         {
+            tName = tableName;
             dal = new DAL.CurrencyDAL<object>(tableName);
         }
 
@@ -51,7 +56,7 @@ namespace BLL
         {
             try
             {
-                return dal.Update(model,Id);
+                return dal.Update(model, Id);
             }
             catch (Exception ex)
             {
@@ -81,6 +86,31 @@ namespace BLL
         public object SelectOne(string objId)
         {
             return dal.SelectOne(ObjectId.Parse(objId));
+        }
+
+
+        public bool Update(string userId, string path, DataBaseModel model)
+        {
+            try
+            {
+                var json = new Dictionary<string, object>();
+                string id = ObjectId.GenerateNewId().ToString();
+                json.Add("Id", id);
+                foreach (Column c in model.list)
+                {
+                    json.Add(c.name, null);
+                }
+                var m = ModelHelper.GetModel(className: tName, UserId: userId, path: path);
+                m = TypeSafe.SafeObject(m, json);
+                dal.Add(m);
+                return dal.Delete(ObjectId.Parse(id));
+
+                //return dal.Add(m);
+            }
+            catch (Exception e)
+            {
+            }
+            return false;
         }
 
     }

@@ -4,3 +4,13 @@ E:\JK\MongoDBAPI\Model\bin\Release\MongoDB.Bson.dll
 E:\JK\MongoDBAPI\Model\bin\Release\MongoDB.Bson.xml
 E:\JK\MongoDBAPI\Model\obj\Release\Model.dll
 E:\JK\MongoDBAPI\Model\obj\Release\Model.pdb
+E:\JK\MongoDBAPI\Model\bin\Release\Newtonsoft.Json.dll
+E:\JK\MongoDBAPI\Model\bin\Release\Utility.dll
+E:\JK\MongoDBAPI\Model\bin\Release\zxing.dll
+E:\JK\MongoDBAPI\Model\bin\Release\ViewModel.dll
+E:\JK\MongoDBAPI\Model\bin\Release\Utility.pdb
+E:\JK\MongoDBAPI\Model\bin\Release\Newtonsoft.Json.xml
+E:\JK\MongoDBAPI\Model\bin\Release\zxing.pdb
+E:\JK\MongoDBAPI\Model\bin\Release\zxing.xml
+E:\JK\MongoDBAPI\Model\bin\Release\ViewModel.pdb
+E:\JK\MongoDBAPI\Model\obj\Release\Model.csprojResolveAssemblyReference.cache

@@ -32,7 +32,7 @@
 
     var paraModel = function () {
         var self = this;
-        self.TableName = "LoginTable";
+        self.TableName = "Student";
         self._id = "";
         self.data = "";
         self.OperationType = "001";
@@ -56,7 +56,7 @@
         $scope.Add = function () {
             var model = new paraModel();
             model.OperationType = "002";
-            model.data = { "LoginName": "123456", "Password": "111111" };
+            model.data = { "id": "123456", "name": "111111","dt":"2016-09-27" };
             $http.post("http://192.168.0.105:85/API/Currency/Insurance", JSON.stringify(model)).success(function (dt) {
                 console.log(dt);
                 if (dt.status == "001")

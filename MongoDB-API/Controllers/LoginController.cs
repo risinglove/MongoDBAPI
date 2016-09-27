@@ -170,7 +170,7 @@ namespace API.Controllers
         public void Add()
         {
             DataBaseBLL dbBll = new DataBaseBLL();
-            dbBll.GenerateUserDLL("57e3932ea95dd03f4432d232");
+            dbBll.GenerateUserDLL("57e3932ea95dd03f4432d232", AppDomain.CurrentDomain.BaseDirectory + @"MyDLL");
 
             //try
             //{
