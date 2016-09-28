@@ -9,6 +9,7 @@ namespace MongnDB_WEB.Controllers
 {
     public class HomeController : ControllerBaseAbs
     {
+        [Authorize]
         public ActionResult Index()
         {
             return View();

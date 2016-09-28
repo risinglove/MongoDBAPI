@@ -2,30 +2,371 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    @*<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>*@
-    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+<div class="row" style="height:5rem;">
+</div>
+<div class="row" style="height:85%;" ng-app="DataBaseApp" ng-controller="DataBaseController">
+    <div class="col-md-2">
+        <section>
+            <ul class="nav nav-pills nav-stacked list-group-item">
+                <li ng-repeat="item in list" ng-click="Select(item)"><button class="btn btn-block  " ng-class="{'btn-primary':item.Id==Table.Id,'btn-default':item.Id!=Table.Id}" ng-bind="item.TableName"></button></li>
+                <li><button class="btn btn-default btn-block marginTop015" data-toggle="modal" data-target="#Add-Table" type="button">创建Class</button></li>
+            </ul>
+        </section>
+    </div>
+    <div class="col-md-10" style="height:100%;">
+        <section style="height:inherit;">
+            <div class="row-fluid" style="height:inherit;">
+                <div class="row-fluid marginBottom006">
+                    <div class="span12">
+                        <div class="btn-group">
+                            <button class="btn btn-default" type="button" data-toggle="modal" data-target="#Add-Row">添加行</button>
+                            <button class="btn btn-default disabled" type="button">删除行</button>
+                            <button class="btn btn-default" type="button" data-toggle="modal" data-target="#Add-Column">添加列</button>
+                            <button class="btn btn-default" type="button">删除列</button>
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn dropdown-toggle  btn-default">更多<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a>重命名列</a>
+                                    </li>
+                                    <li>
+                                        <a>删除Class</a>
+                                    </li>
+                                    <li>
+                                        <a>删除所有数据</a>
+                                    </li>
+                                    <li>
+                                        <a>导出数据</a>
+                                    </li>
+                                    <li>
+                                        <a>导出全部Class</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-fluid" style="height:92.5%;">
+                    <div class="span12" style="width:100%;overflow:auto;border:1px solid #ccc;padding:1rem;max-height:100%;">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" /></th>
+                                    <th style="min-width:13rem;">Id</th>
+                                    <th ng-repeat="item in Table.list" style="min-width:13rem;">
+                                        <span ng-bind="item.name"></span><span ng-bind="item.type" style="color:#ccc;margin-left:.4rem;"></span>
+                                    </th>
+                                    <th style="min-width:13rem;">
+                                        <span>CreateDate</span><span style="color:#ccc;margin-left:.4rem;">date</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in TableData">
+                                    <td><input type="checkbox" /></td>
+                                    <th ng-bind="item['Id']"></th>
+                                    <td ng-repeat="th in Table.list" date_decode="item[th.name]"></td>
+                                    <th date_decode="item['CreateDate']"></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--  添加行数据  -->
+    <div id="Add-Row" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">
+                添加行
+            </h3>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" id="AddRowData">
+                <div class="form-group" ng-repeat="item in Table.list">
+                    <label class="col-md-2 control-label" ng-bind="item.name"></label>
+                    <div class="col-md-10">
+                        <input class="form-control" name="{{item.name}}" ng-if="item.type=='int'||item.type=='decimal'" type="number">
+                        <input class="form-control" name="{{item.name}}" ng-if="item.type=='string'" type="text">
+                        <input class="form-control date datetime" name="{{item.name}}" ng-if="item.type=='date'" type="text">
+                        <input class="" form-control" name="{{item.name}}" ng-if="item.type=='bool'" type="checkbox" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn CloseModel" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" ng-click="SubmitRow()">保存设置</button>
+        </div>
+    </div>
+
+    <!--  添加Table  -->
+    <div id="Add-Table" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">
+                添加表
+            </h3>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" id="AddTable">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">表名</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="tableName" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn CloseModel" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" ng-click="SubmitTable()">保存设置</button>
+        </div>
+    </div>
+    <!--  添加Column  -->
+    <div id="Add-Column" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">
+                添加表
+            </h3>
+        </div>
+        <div class="modal-body" style="min-height:16.5rem;">
+            <form class="form-horizontal" name="AddColumn" id="AddColumn">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">数据类型</label>
+                    <div class="col-md-10">
+                        <div class="btn-group" ng-init="columnName='string'">
+                            <input type="text" class="btn" name="type" ng-model="columnName" style="border: 1px solid #ccc;box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);" disabled="disabled" />
+                            <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a ng-click="columnName='string'">String</a>
+                                </li>
+                                <li>
+                                    <a ng-click="columnName='int'">Int</a>
+                                </li>
+                                <li>
+                                    <a ng-click="columnName='decimal'">Decimal</a>
+                                </li>
+                                <li>
+                                    <a ng-click="columnName='date'">DateTime</a>
+                                </li>
+                                <li>
+                                    <a ng-click="columnName='bool'">Boolean</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">列名</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="name" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn CloseModel" data-dismiss="modal" aria-hidden="true">关闭</button> <button class="btn btn-primary" ng-click="SubmitColumn()">保存设置</button>
+        </div>
+    </div>
+
 </div>
 
-<div class="row">
-    @*<div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>*@
-</div>
+
+
+
+
+
+@section Scripts {
+    <script type="text/javascript">
+        var app = angular.module("DataBaseApp", []);
+
+        app.service('DataBaseService', ['$http', function ($http) {
+            this.getDataBaseList = function () {
+                var httpService = $http.get("/Service/GetDataBaseList?r=" + Math.random());
+                return httpService;
+            }
+            this.getTableData = function (tableName) {
+                var httpService = $http.post("/Service/GetTableData?r=" + Math.random(), { "tableName": tableName });
+                return httpService;
+            }
+
+            this.addTableRowData = function (json, tableName) {
+                var httpService = $http.post("/Service/AddTableRowData?r=" + Math.random(), { "json": json, "tableName": tableName });
+                return httpService;
+            }
+
+            this.addTable = function (tableName) {
+                var httpService = $http.post("/Service/AddTable?r=" + Math.random(), tableName);
+                return httpService;
+            }
+
+            this.addColumn = function (o) {
+                var httpService = $http.post("/Service/AddColumn?r=" + Math.random(), o);
+                return httpService;
+            }
+        }]);
+
+        app.controller('DataBaseController', ["$scope", "$http", "DataBaseService", function ($scope, $http, DataBaseService) {
+            $scope.list = [];
+            $scope.Table = {};
+            $scope.TableData = [];
+            $scope.Init = function () {
+                DataBaseService.getDataBaseList().success(function (data) {
+                    console.log(data);
+                    $scope.list = data;
+                    $scope.Table = data[0];
+                });
+            }
+
+            $scope.Select = function (item) {
+                $scope.Table = item;
+            }
+
+            $scope.$watch("Table", function (newValue, oldValue, scope) {
+                if (newValue && newValue.TableName) {
+                    DataBaseService.getTableData(newValue.TableName).success(function (dt) {
+                        console.log(dt);
+                        $scope.TableData = dt;
+                        $('input.datetime').each(function () {
+                            $(this).datepicker({ language: 'zh-CN', format: 'yyyy-mm-dd' });
+                        });
+                    }, 500);
+                }
+            });
+
+            $scope.SubmitRow = function () {
+                var fields = $("#AddRowData").serializeArray();
+                var o = {};
+                jQuery.each(fields, function (i, fields) {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];  // 将o[label]初始为嵌套数组，如o={a,[a,b,c]}
+                        }
+                        o[this.name].push(this.value || ''); // 将值插入o[label]
+                    } else {
+                        o[this.name] = this.value || '';  // 第一次在o中插入o[label]
+                    }
+                });
+                DataBaseService.addTableRowData(o, $scope.Table.TableName).success(function (dt) {
+                    $(".CloseModel").trigger("click");
+                    DataBaseService.getTableData($scope.Table.TableName).success(function (dt) {
+                        console.log(dt);
+                        $scope.TableData = dt;
+                    }, 500);
+                    console.log(dt);
+                });
+                console.log(JSON.stringify(o));
+            }
+
+            $scope.Init();
+
+            $scope.SubmitTable = function () {
+                var fields = $("#AddTable").serializeArray();
+                var o = {};
+                jQuery.each(fields, function (i, fields) {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];  // 将o[label]初始为嵌套数组，如o={a,[a,b,c]}
+                        }
+                        o[this.name].push(this.value || ''); // 将值插入o[label]
+                    } else {
+                        o[this.name] = this.value || '';  // 第一次在o中插入o[label]
+                    }
+                });
+                DataBaseService.addTable(o).success(function (dt) {
+                    $(".CloseModel").trigger("click");
+                    $scope.Init();
+                    console.log(dt);
+                });
+            }
+
+            $scope.SubmitColumn = function () {
+                var fields = $("#AddColumn").serializeArray();
+                var o = {};
+                jQuery.each(fields, function (i, fields) {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];  // 将o[label]初始为嵌套数组，如o={a,[a,b,c]}
+                        }
+                        o[this.name].push(this.value || ''); // 将值插入o[label]
+                    } else {
+                        o[this.name] = this.value || '';  // 第一次在o中插入o[label]
+                    }
+                });
+                o.type = $scope.columnName;
+                o.tableId = $scope.Table.Id;
+
+                console.log(o);
+                DataBaseService.addColumn(o).success(function (dt) {
+                    $(".CloseModel").trigger("click");
+                    $scope.Init();
+                });
+
+            }
+
+
+        }]);
+
+        //日期
+        app.directive('dateDecode', function () {
+            return function (scope, el, attr) {
+                if (attr.dateDecode) {
+                    scope.$watch(attr.dateDecode, function (value) {
+                        if (value) {
+                            try {
+                                if (value.indexOf("/Date(") > -1) {
+                                    var date = new Date(parseInt(value.replace("/Date(", "").replace(")/", ""), 10));
+                                    el.html(curDateTime(date, true));
+                                } else { el.html(value); }
+                            } catch (e) {
+                                el.html(value);
+                            }
+                        }
+                    });
+                }
+            };
+        });
+
+        function curDateTime(d, is) {
+            d = d || new Date();
+            is = is || false;
+            var year = d.getFullYear();
+            var month = d.getMonth() + 1;
+            var date = d.getDate();
+            var day = d.getDay();
+            var hours = d.getHours();
+            var minutes = d.getMinutes();
+            var seconds = d.getSeconds();
+            var ms = d.getMilliseconds();
+            var curDateTime = year;
+            if (month > 9)
+                curDateTime = curDateTime + "-" + month;
+            else
+                curDateTime = curDateTime + "-0" + month;
+            if (date > 9)
+                curDateTime = curDateTime + "-" + date;
+            else
+                curDateTime = curDateTime + "-0" + date;
+            if (is) {
+                if (hours > 9)
+                    curDateTime = curDateTime + " " + hours;
+                else
+                    curDateTime = curDateTime + " 0" + hours;
+                if (minutes > 9)
+                    curDateTime = curDateTime + ":" + minutes;
+                else
+                    curDateTime = curDateTime + ":0" + minutes;
+                if (seconds > 9)
+                    curDateTime = curDateTime + ":" + seconds;
+                else
+                    curDateTime = curDateTime + ":0" + seconds;
+            }
+            return curDateTime;
+        }
+    </script>
+}
