@@ -23,7 +23,7 @@ namespace MongnDB_WEB.Controllers
         [HttpGet]
         public JsonResult GetDataBaseList()
         {
-            var list = databaseBLL.Select(CurrentUser.Id);
+            var list = databaseBLL.Select(CurrentUser.uId);
             return Json(list, JsonRequestBehavior.AllowGet);
         }
         #endregion
@@ -36,9 +36,9 @@ namespace MongnDB_WEB.Controllers
         /// <returns></returns>
         public JsonResult GetTableData(string tableName)
         {
-            currencyBLL = new BLL.CurrencyBLL(tableName);
-            var list = currencyBLL.GetALL();
-            return Json(list);
+            //currencyBLL = new BLL.CurrencyBLL(tableName);
+            //var list = currencyBLL.GetALL();
+            return Json("");
         }
         #endregion
 
@@ -58,7 +58,7 @@ namespace MongnDB_WEB.Controllers
                 {
                     try
                     {
-                        model = ModelHelper.GetModel(className: tableName, UserId: CurrentUser.Id, path: Request.MapPath("/MyDLL"));
+                        model = ModelHelper.GetModel(className: tableName, UserId: CurrentUser.uId.ToString(), path: Request.MapPath("/MyDLL"));
                         model = TypeSafe.SafeObject(model, json);
 
                     }
@@ -67,15 +67,15 @@ namespace MongnDB_WEB.Controllers
                         return null;
                     }
                 }
-                currencyBLL = new BLL.CurrencyBLL(tableName);
-                if (currencyBLL.Add(model))
-                {
-                    return Json("ok");
-                }
-                else
-                {
-                    return Json("no");
-                }
+                //currencyBLL = new BLL.CurrencyBLL(tableName);
+                //if (currencyBLL.Add(model))
+                //{
+                //    return Json("ok");
+                //}
+                //else
+                //{
+                //    return Json("no");
+                //}
             }
             catch (Exception e)
             {
@@ -93,14 +93,15 @@ namespace MongnDB_WEB.Controllers
         /// <returns></returns>
         public JsonResult AddTable(string tableName)
         {
-            DataBaseBLL dbBll = new DataBaseBLL();
-            DataBaseModel model = new DataBaseModel() { TableName = tableName, UserID = CurrentUser.Id };
-            if (dbBll.Add(model))
-            {
-                dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
-                return Json("ok");
-            }
-            else { return Json("no"); }
+            //DataBaseBLL dbBll = new DataBaseBLL();
+            //DataBaseModel model = new DataBaseModel() { TableName = tableName, UserID = CurrentUser.Id };
+            //if (dbBll.Add(model))
+            //{
+            //    dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
+            //    return Json("ok");
+            //}
+            //else { return Json("no"); }
+            return null;
         }
         #endregion
 
@@ -114,22 +115,23 @@ namespace MongnDB_WEB.Controllers
         /// <returns></returns>
         public JsonResult AddColumn(string tableId, string name, string type)
         {
-            DataBaseBLL dbBll = new DataBaseBLL();
-            DataBaseModel model = dbBll.SelectOne(tableId);
-            if (model.list == null)
-            {
-                model.list = new List<Column>() { new Column() { name = name, type = type } };
-            }
-            else
-            {
-                model.list.Add(new Column() { name = name, type = type });
-            }
-            if (dbBll.Update(model))
-            {
-                dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
-                return Json("ok");
-            }
-            else { return Json("no"); }
+            //DataBaseBLL dbBll = new DataBaseBLL();
+            //DataBaseModel model = dbBll.SelectOne(tableId);
+            //if (model.list == null)
+            //{
+            //    model.list = new List<Column>() { new Column() { name = name, type = type } };
+            //}
+            //else
+            //{
+            //    model.list.Add(new Column() { name = name, type = type });
+            //}
+            //if (dbBll.Update(model))
+            //{
+            //    dbBll.GenerateUserDLL(CurrentUser.Id, Request.MapPath("/MyDLL"));
+            //    return Json("ok");
+            //}
+            //else { return Json("no"); }
+            return null;
         }
         #endregion
 

@@ -20,11 +20,11 @@ namespace MongnDB_WEB.Controllers
     [Authorize]
     public class AccountController : ControllerBaseAbs
     {
-        private UserBLL userBll
+        private UsersTable userBll
         {
             get
             {
-                return new UserBLL();
+                return new UsersTable();
             }
         }
         //private ApplicationSignInManager _signInManager;
@@ -89,7 +89,7 @@ namespace MongnDB_WEB.Controllers
                 return View(model);
             }
 
-            AccountsPrincipal userPrincipal = AccountsPrincipal.ValidateLogin(model.Email,model.Password);
+            AccountsPrincipal userPrincipal = AccountsPrincipal.ValidateLogin(model.Email, model.Password);
             if (userPrincipal == null)
             {
                 ModelState.AddModelError("Message", "用户名或密码不正确, 请重新输入!");
@@ -97,14 +97,14 @@ namespace MongnDB_WEB.Controllers
             }
 
             var identity = new ClaimsIdentity(userPrincipal.Identity);
-            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, userPrincipal.user.Id));
+            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, userPrincipal.user.uId.ToString()));
             identity.AddClaim(new Claim("http://schemas.microsoft.com/accesscontrolservice/2010/07/claims/identityprovider", "ASP.NET Identity")); // 需要用于AntiForgeryToken
-            
+
             HttpContext.GetOwinContext().Authentication.SignIn(identity);
             FormsAuthentication.SetAuthCookie(model.Email, model.RememberMe);
             Session[Globals.SESSIONKEY_USER] = userPrincipal.user;
             return RedirectToLocal(returnUrl);
-            
+
             #region MyRegion
             //var user = userBll.Login(model.Email, EncyryptionUtil.getMD5(model.Password));
             //if (user == null)
@@ -151,15 +151,15 @@ namespace MongnDB_WEB.Controllers
                     ModelState.AddModelError("", "该邮箱已被注册！");
                     return View(model);
                 }
-                Model.User userModel = new Model.User()
+                Model.UsersTable userModel = new Model.UsersTable()
                 {
                     NickName = model.NickName,
                     UserName = model.Email,
                     Password = EncyryptionUtil.getMD5(model.Password),
-                    appID = EncyryptionUtil.getMD5(ObjectId.GenerateNewId(DateTime.Now).ToString()).ToLowerInvariant(),
-                    appsecret = EncyryptionUtil.getMD5(Guid.NewGuid().ToString().Replace("-", "")).ToLowerInvariant()
+                    AppID = EncyryptionUtil.getMD5(ObjectId.GenerateNewId(DateTime.Now).ToString()).ToLowerInvariant(),
+                    AppSecret = EncyryptionUtil.getMD5(Guid.NewGuid().ToString().Replace("-", "")).ToLowerInvariant()
                 };
-                if (userBll.Add(userModel))
+                if (userBll.Add(userModel) > 0)
                 {
                     var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                     //var result = await UserManager.CreateAsync(user, model.Password);
@@ -168,7 +168,7 @@ namespace MongnDB_WEB.Controllers
                     //    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                     //    return RedirectToAction("Index", "Home");
                     //}
-                   // AddErrors(result);
+                    // AddErrors(result);
                 }
                 else
                 {

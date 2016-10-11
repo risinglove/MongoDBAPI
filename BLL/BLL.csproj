@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Maticsoft.Common">
+      <HintPath>..\packages\Maticsoft.Common.dll</HintPath>
+    </Reference>
     <Reference Include="MongoDB.Bson, Version=2.2.3.3, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\MongoDB.Bson.2.2.3\lib\net45\MongoDB.Bson.dll</HintPath>
@@ -58,12 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CurrencyBLL.cs" />
-    <Compile Include="DataBaseBLL.cs" />
+    <Compile Include="DataBaseTables.cs" />
     <Compile Include="Insurace.cs" />
-    <Compile Include="LoginBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserBLL.cs" />
+    <Compile Include="ScoreNotesTable.cs" />
+    <Compile Include="TableColumns.cs" />
+    <Compile Include="UsersTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

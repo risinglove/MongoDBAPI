@@ -9,28 +9,27 @@ namespace MongnDB_WEB.Function
 {
     public class ControllerBaseAbs : Controller
     {
-        public UserBLL userBll
+        public UsersTable userBll
         {
             get
             {
-                return new UserBLL();
+                return new UsersTable();
             }
         }
 
 
-        public DataBaseBLL databaseBLL
+        public DataBaseTables databaseBLL
         {
-            get { return new DataBaseBLL(); }
+            get { return new DataBaseTables(); }
         }
+        
 
-        public CurrencyBLL currencyBLL = null;
 
-
-        private Model.User currentUser;
+        private Model.UsersTable currentUser;
         /// <summary>
         /// 当前登录用户信息
         /// </summary>
-        public Model.User CurrentUser { get { return currentUser; } }
+        public Model.UsersTable CurrentUser { get { return currentUser; } }
 
         /// <summary>
         /// 初始化
@@ -49,7 +48,7 @@ namespace MongnDB_WEB.Function
             }
             else
             {
-                currentUser = Session[Globals.SESSIONKEY_USER] as Model.User;
+                currentUser = Session[Globals.SESSIONKEY_USER] as Model.UsersTable;
             }
             ViewBag.Name = currentUser != null ? (string.IsNullOrWhiteSpace(currentUser.NickName) ? currentUser.UserName : currentUser.NickName) : "";
             ViewBag.IsLogin = currentUser != null;

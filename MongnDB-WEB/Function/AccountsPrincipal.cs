@@ -13,19 +13,19 @@ namespace MongnDB_WEB.Function
     {
         protected IIdentity identity;
 
-        public Model.User user { get; set; }
+        public Model.UsersTable user { get; set; }
 
-        public AccountsPrincipal(Model.User model)
+        public AccountsPrincipal(Model.UsersTable model)
         {
             identity = new SiteIdentity(model);
             user = model;
         }
 
-        private static BLL.UserBLL userBll
+        private static BLL.UsersTable userBll
         {
             get
             {
-                return new BLL.UserBLL();
+                return new BLL.UsersTable();
             }
         }
         public IIdentity Identity

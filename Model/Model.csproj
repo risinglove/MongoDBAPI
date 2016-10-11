@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Currency.cs" />
-    <Compile Include="Login.cs" />
-    <Compile Include="BaseResult.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="DataBaseTables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScoreNotesTable.cs" />
+    <Compile Include="TableColumns.cs" />
+    <Compile Include="UsersTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utility\Utility.csproj">

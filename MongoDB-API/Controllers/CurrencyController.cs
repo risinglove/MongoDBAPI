@@ -30,8 +30,8 @@ namespace API.Controllers
                 HttpContext.Current = ctx;
                 return new HttpResponseMessage
                 {
-                    Content =
-                        new StringContent(new Insurace(_json).Ins(), Encoding.UTF8, "application/json")
+                    //Content =
+                    //    new StringContent(new Insurace(_json).Ins(), Encoding.UTF8, "application/json")
                 };
             });
         }

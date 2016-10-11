@@ -1,0 +1,550 @@
+
+
+17:12:43:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:27:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:29:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:29:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:30:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:31:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:15:31:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:16:21:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key)
+   在 Maticsoft.DBUtility.PubConstant..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:16:36:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\PubConstant.cs:行号 78
+   在 Maticsoft.DBUtility.PubConstant..cctor() 位置 E:\JK\商城\Src\Lib\CS\DBUtility\PubConstant.cs:行号 16
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor() 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 20
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:17:18:_ErrorMsg:System.TypeInitializationException: “Maticsoft.DBUtility.DbHelperSQL”的类型初始值设定项引发异常。 ---> System.TypeInitializationException: “Maticsoft.DBUtility.PubConstant”的类型初始值设定项引发异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Maticsoft.DBUtility.PubConstant.GetConfigString(String key) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\PubConstant.cs:行号 78
+   在 Maticsoft.DBUtility.PubConstant..cctor() 位置 E:\JK\商城\Src\Lib\CS\DBUtility\PubConstant.cs:行号 16
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.PubConstant.get_ConnectionString()
+   在 Maticsoft.DBUtility.DbHelperSQL..cctor() 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 20
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString)
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:21:31:_ErrorMsg:System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 528
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:31:37:_ErrorMsg:System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 528
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:39:23:_ErrorMsg:System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 528
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:39:55:_ErrorMsg:System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 528
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+
+
+
+17:40:16:_ErrorMsg:System.Exception: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 E:\JK\商城\Src\Lib\CS\DBUtility\DbHelperSQL.cs:行号 528
+   在 DAL.UsersTable.GetList(String strWhere) 位置 E:\JK\MongoDBAPI\DAL\UsersTable.cs:行号 275
+   在 BLL.UsersTable.GetModelList(String strWhere) 位置 E:\JK\MongoDBAPI\BLL\UsersTable.cs:行号 136
+   在 API.Controllers.LoginController.GetUserModel() 位置 E:\JK\MongoDBAPI\MongoDB-API\Controllers\LoginController.cs:行号 19
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+

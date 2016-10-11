@@ -13,7 +13,7 @@ namespace MongnDB_WEB.Function
         /// </summary>
         //[BsonId]
         //[BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public int uId { get; set; }
 
         /// <summary>
         /// 登录名
@@ -28,11 +28,11 @@ namespace MongnDB_WEB.Function
         /// <summary>
         /// 创建时间
         /// </summary>
-        public string CreateDate { get; set; } = DateTime.Now.ToString();
+        public DateTime CreateDate { get; set; } = DateTime.Now;
 
-        public string appID { get; set; }
+        public string AppID { get; set; }
 
-        public string appsecret { get; set; }
+        public string AppSecret { get; set; }
         #endregion
 
         public string AuthenticationType
@@ -47,7 +47,7 @@ namespace MongnDB_WEB.Function
         {
             get
             {
-                var user = HttpContext.Current.Session[Globals.SESSIONKEY_USER] as Model.User;
+                var user = HttpContext.Current.Session[Globals.SESSIONKEY_USER] as Model.UsersTable;
                 return user != null;
             }
         }
@@ -67,17 +67,17 @@ namespace MongnDB_WEB.Function
 
         }
 
-        public SiteIdentity(Model.User model)
+        public SiteIdentity(Model.UsersTable model)
         {
             LoadFromDR(model);
         }
 
-        private void LoadFromDR(Model.User model)
+        private void LoadFromDR(Model.UsersTable model)
         {
-            this.appID = model.appID;
-            this.appsecret = model.appsecret;
+            this.AppID = model.AppID;
+            this.AppSecret = model.AppSecret;
             this.CreateDate = model.CreateDate;
-            this.Id = model.Id;
+            this.uId = model.uId;
             this.UserName = model.UserName;
             this.NickName = model.NickName;
         }
